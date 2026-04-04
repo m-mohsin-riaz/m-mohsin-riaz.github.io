@@ -5,25 +5,20 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
-
-show_excerpts: false
-show_frame: true
+show_excerpts: true
+show_frame: false
 show_sidebar: false
 show_minimal: false
-
 url: "https://m-mohsin-riaz.github.io"
 baseurl: ""
-
 navigation:
-  - {file: "blog.md",    title: "Blog",    sidebaricon: "pencil-alt"}
-  - {file: "about.md",   title: "About",   sidebaricon: "user"}
-  - {file: "contact.md", title: "Contact", sidebaricon: "envelope"}
-
+  - {file: "archive.html", title: "Blog",    sidebaricon: "pencil-alt"}
+  - {file: "about.md",     title: "About",   sidebaricon: "user"}
+  - {file: "contact.md",   title: "Contact", sidebaricon: "envelope"}
 external:
   - {title: GitHub,    icon: github,   url: "https://github.com/m-mohsin-riaz"}
   - {title: Mail,      icon: envelope, url: "mailto:your@email.com"}
   - {title: Subscribe, icon: rss,      url: "/feed.xml"}
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
