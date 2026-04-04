@@ -55,7 +55,7 @@ title: Home
   <div class="card">
     <div class="icon">🎓</div>
     <h3>Degree</h3>
-    <p>BS Computer Engineering</p>
+      <p>BS Computer Engineering</p>
   </div>
   <div class="card">
     <div class="icon">🏛️</div>
@@ -65,6 +65,6 @@ title: Home
   <div class="card">
     <div class="icon">🏙️</div>
     <h3>Home City</h3>
-    <p>Lahore</p>
+        <p>Lahore</p>
   </div>
 </div>
