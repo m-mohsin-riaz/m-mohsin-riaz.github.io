@@ -1,34 +1,29 @@
-title: "mohsin"
-author: "riaz"
-description: "My blog"
+title: "M. Mohsin Riaz"
+author: "M. Mohsin Riaz"
+description: "My personal blog — thoughts, experiences & journey"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
-# Layout
+show_excerpts: false
+show_frame: true
+show_sidebar: false
+show_minimal: false
 
-show_excerpts: true             # show article excerpts instead of archive list on the home page
-show_frame: true                # display a grey frame on large screens
-show_sidebar: false             # show a sidebar instead of the usual header
-show_minimal: false             # remove all clutter
+url: "https://m-mohsin-riaz.github.io"
+baseurl: ""
 
-#show_frame: "/assets/images/background.svg"
+navigation:
+  - {file: "blog.md",    title: "Blog",    sidebaricon: "pencil-alt"}
+  - {file: "about.md",   title: "About",   sidebaricon: "user"}
+  - {file: "contact.md", title: "Contact", sidebaricon: "envelope"}
 
-# Menu                          # for available icons see https://fontawesome.com/v5/icons/
-
-navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "archive.html", sidebaricon: home}
-  - {file: "README.md", sidebaricon: address-card}
-
-external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""         # see https://disqus.com
-#  isso_domain: ""              # see https://isso-comments.de
+external:
+  - {title: GitHub,    icon: github,   url: "https://github.com/m-mohsin-riaz"}
+  - {title: Mail,      icon: envelope, url: "mailto:your@email.com"}
+  - {title: Subscribe, icon: rss,      url: "/feed.xml"}
 
 plugins:
- - jekyll-feed
+  - jekyll-feed
+  - jekyll-seo-tag
