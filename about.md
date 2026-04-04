@@ -52,6 +52,10 @@ title: About
 <div class="about-section">
   <h2>🎓 Education</h2>
   <p>Currently pursuing BS Computer Engineering at University of Engineering & Technology (UET) Faisalabad. Learning programming, electronics, databases and much more.</p>
+  <br>
+  <p>📘 Matric — Computer Science</p>
+  <p>📗 Intermediate — ICS (Inter with Computer Science)</p>
+  <p>📙 Currently — BS Computer Engineering at UET Faisalabad</p>
 </div>
 
 <div class="about-section">
