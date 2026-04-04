@@ -12,11 +12,19 @@ title: Home
     text-align: center;
     margin-bottom: 40px;
   }
+  .hero img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e94560;
+    margin-bottom: 15px;
+  }
   .hero h1 { font-size: 36px; margin-bottom: 10px; }
   .hero p { font-size: 18px; color: #aaa; margin-bottom: 5px; }
   .info-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
   .card {
@@ -29,10 +37,11 @@ title: Home
   }
   .card .icon { font-size: 30px; margin-bottom: 10px; }
   .card h3 { font-size: 14px; color: #888; margin-bottom: 5px; }
-  .card p { font-size: 16px; font-weight: bold; color: #1a1a2e; }
+  .card p { font-size: 14px; font-weight: bold; color: #1a1a2e; }
 </style>
 
 <div class="hero">
+  <img src="/assets/images/WhatsApp Image 2026-04-05 at 2.59.39 AM.jpeg" alt="Mohsin Riaz">
   <h1>Mohsin Riaz</h1>
   <p>Computer Engineering Student</p>
   <p>University of Engineering & Technology (UET) Faisalabad</p>
