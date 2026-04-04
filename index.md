@@ -34,14 +34,19 @@ title: Home
   .card {
     background: white;
     border-radius: 12px;
-    padding: 20px 8px;
+    padding: 20px 12px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     border-left: 4px solid #e94560;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    min-height: 120px;
   }
-  .card .icon { font-size: 24px; margin-bottom: 8px; }
-  .card h3 { font-size: 11px; color: #888; margin-bottom: 5px; }
-  .card p { font-size: 11px; font-weight: bold; color: #1a1a2e; margin: 0; line-height: 1.4; }
+  .card .icon { font-size: 28px; margin-bottom: 10px; }
+  .card h3 { font-size: 11px; color: #888; margin: 0 0 4px 0; font-weight: normal; }
+  .card p { font-size: 12px; font-weight: bold; color: #1a1a2e; margin: 0; line-height: 1.4; }
 </style>
 
 <div class="hero">
