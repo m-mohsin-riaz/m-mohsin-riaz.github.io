@@ -41,17 +41,29 @@ permalink: /semester1/
     padding-bottom: 10px;
   }
   .info-section p { line-height: 1.8; color: #555; font-size: 15px; }
-  .pics-grid {
+  .subjects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 20px;
   }
-  .pics-grid img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    height: 180px;
+  .subject-card {
+    background: #f9f9f9;
+    border-left: 4px solid #e94560;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .subject-card .icon { font-size: 22px; }
+  .subject-card .name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-top: 6px;
+  }
+  .subject-card .type {
+    font-size: 11px;
+    color: #888;
   }
   .post-card {
     background: white;
@@ -87,46 +99,46 @@ permalink: /semester1/
   <h2>📖 About This Semester</h2>
   <p>My first semester at UET Faisalabad was a life-changing experience. Moving into the hostel, attending university for the first time, making new friends, and learning new subjects all at once was both exciting and challenging. From struggling with Calculus and Physics to writing my first Python programs, every week taught me something new. I even completed a Machine Learning project in my very first semester, which gave me great confidence and motivation to keep growing.</p>
 
-  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-top:20px;">
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">💻</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Programming Fundamentals</div>
-      <div style="font-size:11px; color:#888;">Theory</div>
+  <div class="subjects-grid">
+    <div class="subject-card">
+      <div class="icon">💻</div>
+      <div class="name">Programming Fundamentals</div>
+      <div class="type">Theory</div>
     </div>
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">📐</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Calculus</div>
-      <div style="font-size:11px; color:#888;">Theory</div>
+    <div class="subject-card">
+      <div class="icon">📐</div>
+      <div class="name">Calculus</div>
+      <div class="type">Theory</div>
     </div>
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">🧮</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Discrete Mathematics</div>
-      <div style="font-size:11px; color:#888;">Theory</div>
+    <div class="subject-card">
+      <div class="icon">🧮</div>
+      <div class="name">Discrete Mathematics</div>
+      <div class="type">Theory</div>
     </div>
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">🖥️</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">AICT</div>
-      <div style="font-size:11px; color:#888;">Theory</div>
+    <div class="subject-card">
+      <div class="icon">🖥️</div>
+      <div class="name">AICT</div>
+      <div class="type">Theory</div>
     </div>
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">⚛️</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Applied Physics</div>
-      <div style="font-size:11px; color:#888;">Theory</div>
+    <div class="subject-card">
+      <div class="icon">⚛️</div>
+      <div class="name">Applied Physics</div>
+      <div class="type">Theory</div>
     </div>
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">🔬</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Lab - PF</div>
-      <div style="font-size:11px; color:#888;">Lab</div>
+    <div class="subject-card">
+      <div class="icon">🔬</div>
+      <div class="name">Lab - PF</div>
+      <div class="type">Lab</div>
     </div>
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">💾</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Lab - AICT</div>
-      <div style="font-size:11px; color:#888;">Lab</div>
+    <div class="subject-card">
+      <div class="icon">💾</div>
+      <div class="name">Lab - AICT</div>
+      <div class="type">Lab</div>
     </div>
-    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
-      <div style="font-size:22px;">🧪</div>
-      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Lab - Physics</div>
-      <div style="font-size:11px; color:#888;">Lab</div>
+    <div class="subject-card">
+      <div class="icon">🧪</div>
+      <div class="name">Lab - Physics</div>
+      <div class="type">Lab</div>
     </div>
   </div>
 </div>
