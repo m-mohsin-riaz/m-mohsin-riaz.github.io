@@ -5,7 +5,7 @@ permalink: /myjourney/
 ---
 
 <style>
-  .blog-header {
+  .journey-header {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
     border-radius: 15px;
@@ -13,41 +13,45 @@ permalink: /myjourney/
     margin-bottom: 30px;
     text-align: center;
   }
-  .blog-header h1 { font-size: 32px; margin-bottom: 10px; }
-  .blog-header p { color: #aaa; font-size: 16px; }
-  .post-card {
+  .journey-header h1 { font-size: 32px; margin-bottom: 10px; }
+  .journey-header p { color: #aaa; font-size: 16px; }
+  .semester-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .semester-card {
     background: white;
     border-radius: 12px;
-    padding: 25px 30px;
-    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     border-left: 4px solid #e94560;
-  }
-  .post-card h2 { font-size: 20px; margin-bottom: 8px; }
-  .post-card h2 a { color: #1a1a2e; text-decoration: none; }
-  .post-card h2 a:hover { color: #e94560; }
-  .post-date { color: #888; font-size: 13px; margin-bottom: 10px; }
-  .post-excerpt { color: #555; font-size: 14px; line-height: 1.7; }
-  .read-more {
-    display: inline-block;
-    margin-top: 12px;
-    color: #e94560;
-    font-size: 14px;
-    font-weight: bold;
     text-decoration: none;
+    color: #1a1a2e;
+    display: block;
+    transition: transform 0.2s;
   }
+  .semester-card:hover { transform: translateY(-5px); }
+  .semester-card .icon { font-size: 40px; margin-bottom: 15px; }
+  .semester-card h2 { font-size: 20px; margin-bottom: 8px; color: #1a1a2e; }
+  .semester-card p { font-size: 14px; color: #888; }
 </style>
 
-<div class="blog-header">
+<div class="journey-header">
   <h1>My Journey</h1>
-  <p>Stories, experiences and learnings from my life</p>
+  <p>My university life semester by semester</p>
 </div>
 
-{% for post in site.posts %}
-<div class="post-card">
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="post-date">📅 {{ post.date | date: "%B %d, %Y" }}</p>
-  <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-  <a class="read-more" href="{{ post.url }}">Read More →</a>
+<div class="semester-cards">
+  <a class="semester-card" href="/semester1/">
+    <div class="icon">📚</div>
+    <h2>Semester 1</h2>
+    <p>My first semester experience</p>
+  </a>
+  <a class="semester-card" href="/semester2/">
+    <div class="icon">🎯</div>
+    <h2>Semester 2</h2>
+    <p>My second semester experience</p>
+  </a>
 </div>
-{% endfor %}
