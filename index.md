@@ -24,20 +24,20 @@ title: Home
   .hero p { font-size: 18px; color: #aaa; margin-bottom: 5px; }
   .info-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
   .card {
     background: white;
     border-radius: 12px;
-    padding: 25px;
+    padding: 20px 15px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     border-left: 4px solid #e94560;
     text-align: center;
   }
-  .card .icon { font-size: 30px; margin-bottom: 10px; }
-  .card h3 { font-size: 14px; color: #888; margin-bottom: 5px; }
-  .card p { font-size: 14px; font-weight: bold; color: #1a1a2e; }
+  .card .icon { font-size: 28px; margin-bottom: 10px; }
+  .card h3 { font-size: 12px; color: #888; margin-bottom: 5px; }
+  .card p { font-size: 13px; font-weight: bold; color: #1a1a2e; margin: 0; }
 </style>
 
 <div class="hero">
