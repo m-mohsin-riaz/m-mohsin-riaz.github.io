@@ -42,9 +42,9 @@ permalink: /semester1/
   }
   .info-section p { line-height: 1.8; color: #555; font-size: 15px; }
   .subjects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px !important;
     margin-top: 20px;
   }
   .subject-card {
