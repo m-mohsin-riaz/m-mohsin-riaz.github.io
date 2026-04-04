@@ -34,14 +34,14 @@ title: Home
   .card {
     background: white;
     border-radius: 12px;
-    padding: 20px 10px;
+    padding: 20px 8px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     border-left: 4px solid #e94560;
     text-align: center;
   }
-  .card .icon { font-size: 26px; margin-bottom: 8px; }
-  .card h3 { font-size: 12px; color: #888; margin-bottom: 5px; }
-  .card p { font-size: 12px; font-weight: bold; color: #1a1a2e; margin: 0; }
+  .card .icon { font-size: 24px; margin-bottom: 8px; }
+  .card h3 { font-size: 11px; color: #888; margin-bottom: 5px; }
+  .card p { font-size: 11px; font-weight: bold; color: #1a1a2e; margin: 0; line-height: 1.4; }
 </style>
 
 <div class="hero">
@@ -55,7 +55,7 @@ title: Home
   <div class="card">
     <div class="icon">🎓</div>
     <h3>Degree</h3>
-      <p>BS Computer Engineering</p>
+    <p>BS Computer Engineering</p>
   </div>
   <div class="card">
     <div class="icon">🏛️</div>
@@ -65,6 +65,6 @@ title: Home
   <div class="card">
     <div class="icon">🏙️</div>
     <h3>Home City</h3>
-        <p>Lahore</p>
+    <p>Lahore</p>
   </div>
 </div>
