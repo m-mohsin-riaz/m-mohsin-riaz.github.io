@@ -18,7 +18,7 @@ navigation:
   - {file: "contact.md", title: "Contact",    icon: "envelope"}
 external:
   - {title: GitHub,    icon: github,   url: "https://github.com/m-mohsin-riaz"}
-  - {title: Mail,      icon: envelope, url: "mailto:your@email.com"}
+  - {title: Mail,      icon: envelope, url: "mailto:wmohsinriaz@gmail.com"}
   - {title: Subscribe, icon: rss,      url: "/feed.xml"}
 plugins:
   - jekyll-feed
