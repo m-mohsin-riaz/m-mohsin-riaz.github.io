@@ -4,6 +4,7 @@ title: Home
 ---
 
 <style>
+  /* Hero Section Styling */
   .hero {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
@@ -13,6 +14,7 @@ title: Home
     margin-bottom: 40px;
     overflow: hidden;
   }
+
   .hero img {
     width: 130px;
     height: 130px;
@@ -24,29 +26,83 @@ title: Home
     margin-left: auto;
     margin-right: auto;
   }
-  .hero h1 { font-size: 32px; margin-bottom: 10px; }
-  .hero p { font-size: 16px; color: #aaa; margin-bottom: 5px; }
+
+  .hero h1 { 
+    font-size: 32px; 
+    margin-bottom: 10px; 
+    font-weight: 700;
+  }
+
+  .hero p { 
+    font-size: 16px; 
+    color: #aaa; 
+    margin-bottom: 5px; 
+  }
+
+  /* Info Cards Grid */
   .info-cards {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
+
+  /* Card Fixes */
   .card {
     background: white;
     border-radius: 12px;
-    padding: 20px 12px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-    border-left: 4px solid #e94560;
+    padding: 25px 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border-left: 5px solid #e94560;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Horizontally center */
+    justify-content: center; /* Vertically center */
     text-align: center;
-    min-height: 120px;
+    min-height: 140px;
+    transition: transform 0.3s ease;
   }
-  .card .icon { font-size: 28px; margin-bottom: 10px; }
-  .card h3 { font-size: 11px; color: #888; margin: 0 0 4px 0; font-weight: normal; }
-  .card p { font-size: 12px; font-weight: bold; color: #1a1a2e; margin: 0; line-height: 1.4; }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Icon and Text Alignment */
+  .card .icon { 
+    font-size: 30px; 
+    margin-bottom: 12px; 
+    line-height: 1;
+  }
+
+  .card h3 { 
+    font-size: 13px; 
+    color: #888; 
+    margin: 0 0 6px 0; 
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .card p { 
+    font-size: 14px; 
+    font-weight: 700; 
+    color: #1a1a2e; 
+    margin: 0; 
+    line-height: 1.4;
+  }
+
+  /* Mobile Responsive Fix */
+  @media (max-width: 768px) {
+    .info-cards {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
+    .card {
+      min-height: auto;
+      padding: 20px;
+    }
+  }
 </style>
 
 <div class="hero">
@@ -62,11 +118,13 @@ title: Home
     <h3>Degree</h3>
     <p>BS Computer Engineering</p>
   </div>
+
   <div class="card">
     <div class="icon">🏛️</div>
     <h3>University</h3>
     <p>UET Faisalabad</p>
   </div>
+
   <div class="card">
     <div class="icon">🏙️</div>
     <h3>Home City</h3>
