@@ -85,13 +85,49 @@ permalink: /semester1/
 
 <div class="info-section">
   <h2>📖 About This Semester</h2>
-  <p>Write your semester experience here — subjects, teachers, hostel life and more.</p>
-</div>
+  <p>My first semester at UET Faisalabad was a life-changing experience. Moving into the hostel, attending university for the first time, making new friends, and learning new subjects all at once was both exciting and challenging. From struggling with Calculus and Physics to writing my first Python programs, every week taught me something new. I even completed a Machine Learning project in my very first semester, which gave me great confidence and motivation to keep growing.</p>
 
-<div class="info-section">
-  <h2>📸 Pictures</h2>
-  <div class="pics-grid">
-    <p style="color:#888;">No pictures added yet.</p>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-top:20px;">
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">💻</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Programming Fundamentals</div>
+      <div style="font-size:11px; color:#888;">Theory</div>
+    </div>
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">📐</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Calculus</div>
+      <div style="font-size:11px; color:#888;">Theory</div>
+    </div>
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">🧮</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Discrete Mathematics</div>
+      <div style="font-size:11px; color:#888;">Theory</div>
+    </div>
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">🖥️</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">AICT</div>
+      <div style="font-size:11px; color:#888;">Theory</div>
+    </div>
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">⚛️</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Applied Physics</div>
+      <div style="font-size:11px; color:#888;">Theory</div>
+    </div>
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">🔬</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Lab - PF</div>
+      <div style="font-size:11px; color:#888;">Lab</div>
+    </div>
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">💾</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Lab - AICT</div>
+      <div style="font-size:11px; color:#888;">Lab</div>
+    </div>
+    <div style="background:#f9f9f9; border-left:4px solid #e94560; border-radius:8px; padding:12px; text-align:center;">
+      <div style="font-size:22px;">🧪</div>
+      <div style="font-size:12px; font-weight:bold; color:#1a1a2e; margin-top:6px;">Lab - Physics</div>
+      <div style="font-size:11px; color:#888;">Lab</div>
+    </div>
   </div>
 </div>
 
