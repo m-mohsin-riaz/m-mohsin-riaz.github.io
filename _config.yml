@@ -13,9 +13,9 @@ show_minimal: false
 url: "https://m-mohsin-riaz.github.io"
 baseurl: ""
 navigation:
-  - {file: "blog.md",    title: "My Journey", icon: "book-open"}
-  - {file: "about.md",   title: "About",      icon: "user"}
-  - {file: "contact.md", title: "Contact",    icon: "envelope"}
+  - {file: "myjourney.md", title: "My Journey", icon: "book-open"}
+  - {file: "about.md",     title: "About",      icon: "user"}
+  - {file: "contact.md",   title: "Contact",    icon: "envelope"}
 external:
   - {title: GitHub,    icon: github,   url: "https://github.com/m-mohsin-riaz"}
   - {title: Mail,      icon: envelope, url: "mailto:wmohsinriaz@gmail.com"}
