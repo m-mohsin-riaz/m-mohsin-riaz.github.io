@@ -1,10 +1,10 @@
 ---
 layout: default
-title: About
+title: Contact
 ---
 
 <style>
-  .about-header {
+  .contact-header {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
     border-radius: 15px;
@@ -12,60 +12,60 @@ title: About
     margin-bottom: 30px;
     text-align: center;
   }
-  .about-header h1 { font-size: 32px; margin-bottom: 10px; }
-  .about-header p { color: #aaa; font-size: 16px; }
-  .about-section {
+  .contact-header h1 { font-size: 32px; margin-bottom: 10px; }
+  .contact-header p { color: #aaa; font-size: 16px; }
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .contact-card {
     background: white;
     border-radius: 12px;
     padding: 30px;
-    margin-bottom: 20px;
+    text-align: center;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
   }
-  .about-section h2 {
-    color: #e94560;
-    font-size: 20px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #f4f6f9;
-    padding-bottom: 10px;
-  }
-  .about-section p { line-height: 1.8; color: #555; font-size: 15px; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-  .skill-tag {
-    background: #1a1a2e;
-    color: white;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 13px;
-  }
+  .contact-card .icon { font-size: 40px; margin-bottom: 15px; }
+  .contact-card h3 { font-size: 14px; color: #888; margin-bottom: 8px; }
+  .contact-card p { font-size: 15px; color: #1a1a2e; font-weight: bold; }
+  .contact-card a { color: #e94560; text-decoration: none; }
 </style>
 
-<div class="about-header">
-  <h1>About Me</h1>
-  <p>Get to know me better!</p>
+<div class="contact-header">
+  <h1>Contact Me</h1>
+  <p>Feel free to reach out anytime!</p>
 </div>
 
-<div class="about-section">
-  <h2>👋 Who Am I?</h2>
-  <p>My name is Mohsin Riaz. I am from Lahore but currently living in Faisalabad for my studies. I am a Computer Engineering student at UET Faisalabad in my 2nd semester.</p>
-</div>
-
-<div class="about-section">
-  <h2>🎓 Education</h2>
-  <p>Currently pursuing BS Computer Engineering at University of Engineering & Technology (UET) Faisalabad. Learning programming, electronics, databases and much more.</p>
-</div>
-
-<div class="about-section">
-  <h2>💻 Skills</h2>
-  <div class="skills-list">
-    <span class="skill-tag">HTML</span>
-    <span class="skill-tag">CSS</span>
-    <span class="skill-tag">MySQL</span>
-    <span class="skill-tag">GitHub</span>
-    <span class="skill-tag">Problem Solving</span>
+<div class="contact-cards">
+  <div class="contact-card">
+    <div class="icon">📧</div>
+    <h3>Email</h3>
+    <p><a href="wmailto:mohsinriaz@gmail.com">wmohsinriaz@gmail.com</a></p>
   </div>
-</div>
-
-<div class="about-section">
-  <h2>🌟 Interests</h2>
-  <p>I enjoy coding, learning new technologies and sharing my journey through my blog. Originally from Lahore, I believe in continuous learning and working hard to achieve my goals.</p>
+  <div class="contact-card">
+    <div class="icon">🐙</div>
+    <h3>GitHub</h3>
+    <p><a href="https://github.com/m-mohsin-riaz" target="_blank">m-mohsin-riaz</a></p>
+  </div>
+  <div class="contact-card">
+    <div class="icon">💬</div>
+    <h3>WhatsApp</h3>
+    <p><a href="https://wa.me/923014144869" target="_blank">+92 301 4144869</a></p>
+  </div>
+  <div class="contact-card">
+    <div class="icon">📸</div>
+    <h3>Instagram</h3>
+    <p><a href="https://instagram.com/itz_mohsin_riaz" target="_blank">itz_mohsin_riaz</a></p>
+  </div>
+  <div class="contact-card">
+    <div class="icon">🏙️</div>
+    <h3>Home City</h3>
+    <p>Lahore, Pakistan</p>
+  </div>
+  <div class="contact-card">
+    <div class="icon">🎓</div>
+    <h3>University</h3>
+    <p>UET Faisalabad</p>
+  </div>
 </div>
