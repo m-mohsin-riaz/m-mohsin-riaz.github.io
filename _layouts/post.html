@@ -2,22 +2,32 @@
 layout: default
 ---
 
-<article>
-  {% include meta.html post=page %}
-  {{ content }}
-  {% if site.comments.isso_domain or site.comments.disqus_shortname %}
-    <hr>
-    {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}
-    {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}
-    <noscript>Please enable JavaScript to view comments.</noscript>
-  {% endif %}
-</article>
+<style>
+  .post-header { margin-bottom: 30px; }
+  .post-header h1 { font-size: 32px; color: #1a1a2e; margin-bottom: 10px; }
+  .post-meta { color: #888; font-size: 14px; margin-bottom: 20px; }
+  .post-content { line-height: 1.9; font-size: 16px; }
+  .post-content p { margin-bottom: 15px; }
+  .back-btn {
+    display: inline-block;
+    margin-bottom: 25px;
+    background: #e94560;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .back-btn:hover { background: #c73652; }
+</style>
 
-{% unless site.show_minimal or site.footer  %}
-{% if page.next.url or page.previous.url %}
-<footer class="nowrap {% if site.show_frame %}dark{% else %}smooth{% endif %}">
-  {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">« {{ page.next.title }}</a> {% endif %}
-  {% if page.previous.url %} <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} »</a>{% endif %}
-</footer>
-{% endif %}
-{% endunless %}
+<a class="back-btn" href="/myjourney">← Back to My Journey</a>
+
+<div class="post-header">
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">📅 {{ page.date | date: "%B %d, %Y" }}</p>
+</div>
+
+<div class="post-content">
+  {{ content }}
+</div>
