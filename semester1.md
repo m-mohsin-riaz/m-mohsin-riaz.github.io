@@ -43,7 +43,7 @@ permalink: /semester1/
   .info-section p { line-height: 1.8; color: #555; font-size: 15px; }
   .subjects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin-top: 20px;
   }
@@ -51,19 +51,20 @@ permalink: /semester1/
     background: #f9f9f9;
     border-left: 4px solid #e94560;
     border-radius: 8px;
-    padding: 12px;
+    padding: 15px 12px;
     text-align: center;
   }
-  .subject-card .icon { font-size: 22px; }
+  .subject-card .icon { font-size: 26px; }
   .subject-card .name {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     color: #1a1a2e;
-    margin-top: 6px;
+    margin-top: 8px;
   }
   .subject-card .type {
     font-size: 11px;
     color: #888;
+    margin-top: 3px;
   }
   .post-card {
     background: white;
@@ -123,6 +124,11 @@ permalink: /semester1/
     <div class="subject-card">
       <div class="icon">⚛️</div>
       <div class="name">Applied Physics</div>
+      <div class="type">Theory</div>
+    </div>
+    <div class="subject-card">
+      <div class="icon">📖</div>
+      <div class="name">Fahm-e-Quran</div>
       <div class="type">Theory</div>
     </div>
     <div class="subject-card">
