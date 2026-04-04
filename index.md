@@ -41,7 +41,7 @@ title: Home
 </style>
 
 <div class="hero">
-  <img src="/assets/images/WhatsApp Image 2026-04-05 at 2.59.39 AM.jpeg" alt="Mohsin Riaz">
+  <img src="/assets/images/mohsin.jpg.jpeg" alt="Mohsin Riaz">
   <h1>Mohsin Riaz</h1>
   <p>Computer Engineering Student</p>
   <p>University of Engineering & Technology (UET) Faisalabad</p>
