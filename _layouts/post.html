@@ -1,33 +1,147 @@
 ---
 layout: default
 ---
-
 <style>
-  .post-header { margin-bottom: 30px; }
-  .post-header h1 { font-size: 32px; color: #1a1a2e; margin-bottom: 10px; }
-  .post-meta { color: #888; font-size: 14px; margin-bottom: 20px; }
-  .post-content { line-height: 1.9; font-size: 16px; }
-  .post-content p { margin-bottom: 15px; }
-  .back-btn {
+  .post-back-btn {
     display: inline-block;
     margin-bottom: 25px;
     background: #e94560;
-    color: #fff;
+    color: white;
     padding: 8px 18px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
   }
-  .back-btn:hover { background: #c73652; }
+  .post-back-btn:hover { background: #c73652; }
+  .post-hero {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .post-hero h1 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .post-hero .post-meta {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .summary-box {
+    background: white;
+    border-left: 4px solid #e94560;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  }
+  .summary-box h2 {
+    color: #e94560;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .summary-box p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0;
+  }
+  .post-content {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    line-height: 1.9;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  .post-content h2 {
+    color: #e94560;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .post-content h3 {
+    color: #1a1a2e;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  .post-content p { margin-bottom: 15px; }
+  .subjects-box {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  }
+  .subjects-box h2 {
+    color: #e94560;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f4f6f9;
+    padding-bottom: 10px;
+  }
+  .subjects-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .subjects-box thead tr {
+    background: #e94560;
+    color: white;
+  }
+  .subjects-box th {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  .subjects-box td {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+  }
 </style>
 
-<a class="back-btn" href="/myjourney">← Back to My Journey</a>
+<a class="post-back-btn" href="/myjourney">← Back to My Journey</a>
 
-<div class="post-header">
+<div class="post-hero">
   <h1>{{ page.title }}</h1>
   <p class="post-meta">📅 {{ page.date | date: "%B %d, %Y" }}</p>
 </div>
 
+{% if page.summary %}
+<div class="summary-box">
+  <h2>📝 Summary</h2>
+  <p>{{ page.summary }}</p>
+</div>
+{% endif %}
+
 <div class="post-content">
   {{ content }}
+</div>
+
+<div class="subjects-box">
+  <h2>📚 Subjects This Semester</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Programming Fundamentals</td><td>Theory</td></tr>
+      <tr><td>Calculus</td><td>Theory</td></tr>
+      <tr><td>Discrete Mathematics</td><td>Theory</td></tr>
+      <tr><td>AICT</td><td>Theory</td></tr>
+      <tr><td>Applied Physics</td><td>Theory</td></tr>
+      <tr><td>Fahm-e-Quran</td><td>Theory</td></tr>
+      <tr><td>Lab - Programming Fundamentals</td><td>Lab</td></tr>
+      <tr><td>Lab - AICT</td><td>Lab</td></tr>
+      <tr><td>Lab - Physics</td><td>Lab</td></tr>
+    </tbody>
+  </table>
 </div>
