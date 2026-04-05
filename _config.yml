@@ -12,6 +12,9 @@ show_sidebar: false
 show_minimal: false
 url: "https://m-mohsin-riaz.github.io"
 baseurl: ""
+
+theme: jekyll-theme-chirpy
+
 navigation:
   - {file: "myjourney.md", title: "My Journey", icon: "book-open"}
   - {file: "about.md",     title: "About",      icon: "user"}
