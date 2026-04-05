@@ -12,10 +12,8 @@
     {%- endif -%}
   </a>
 {%- endfor -%}
-
   <!-- Dark/Light Toggle Button -->
   <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
-
 </nav>
 {%- endif -%}
 
@@ -36,15 +34,14 @@
 
 <script>
   const toggle = document.getElementById('theme-toggle');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
   function getTheme() {
     return localStorage.getItem('theme') ||
-           (prefersDark.matches ? 'dark' : 'light');
+           (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   }
 
   function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.style.colorScheme = theme;
     toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
     localStorage.setItem('theme', theme);
   }
@@ -52,11 +49,11 @@
   applyTheme(getTheme());
 
   toggle.addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('data-theme');
+    const current = localStorage.getItem('theme') || 'dark';
     applyTheme(current === 'dark' ? 'light' : 'dark');
   });
 
-  prefersDark.addEventListener('change', (e) => {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
     if (!localStorage.getItem('theme')) {
       applyTheme(e.matches ? 'dark' : 'light');
     }
