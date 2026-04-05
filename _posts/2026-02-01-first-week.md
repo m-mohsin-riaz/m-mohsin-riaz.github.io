@@ -18,22 +18,6 @@ tags: [semester1, uet-faisalabad]
 <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 1rem;">
 
   <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
-    <img src="/assets/images/orientation.jpg" alt="Orientation Day"
-         style="width: 300px; height: 200px; object-fit: cover; border-radius: 10px; flex-shrink: 0;">
-    <div>
-      <h3 style="margin-top: 0;">🎓 Orientation Day</h3>
-      <p>The first day at UET Faisalabad was a mix of excitement and nervousness.
-      We gathered in the main hall where the Dean gave a welcome speech.
-      Senior students guided us around and helped us understand how university life works.
-      We got our student IDs, filled out forms, and met our batch fellows for the first time.
-      Everyone was a stranger in the morning, but by evening we had already exchanged numbers.
-      It was the beginning of something big.</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
     <img src="/assets/images/campus.jpg" alt="Campus Tour"
          style="width: 300px; height: 200px; object-fit: cover; border-radius: 10px; flex-shrink: 0;">
     <div>
@@ -44,6 +28,22 @@ tags: [semester1, uet-faisalabad]
       The seniors showed us every corner and shared tips about which spots are best for studying.
       By the end of the tour our feet were tired but our eyes were wide open.
       This place already felt like it had stories in every wall.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+    <img src="/assets/images/orientation.jpg" alt="Orientation Day"
+         style="width: 300px; height: 200px; object-fit: cover; border-radius: 10px; flex-shrink: 0;">
+    <div>
+      <h3 style="margin-top: 0;">🎓 Orientation Day</h3>
+      <p>The first day at UET Faisalabad was a mix of excitement and nervousness.
+      We gathered in the main hall where the Dean gave a welcome speech.
+      Senior students guided us around and helped us understand how university life works.
+      We got our student IDs, filled out forms, and met our batch fellows for the first time.
+      Everyone was a stranger in the morning, but by evening we had already exchanged numbers.
+      It was the beginning of something big.</p>
     </div>
   </div>
 
