@@ -4,81 +4,89 @@ title: Contact
 ---
 
 <style>
-  /* Header Styling */
+  /* Header Section */
   .contact-header {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
     border-radius: 15px;
-    padding: 40px;
-    margin-bottom: 30px;
+    padding: 50px 20px;
+    margin-bottom: 40px;
     text-align: center;
   }
-  .contact-header h1 { font-size: 32px; margin-bottom: 10px; font-weight: 700; }
-  .contact-header p { color: #aaa; font-size: 16px; }
+  .contact-header h1 { font-size: 32px; margin: 0 0 10px 0; }
+  .contact-header p { color: #aaa; font-size: 16px; margin: 0; }
 
-  /* Grid Layout */
+  /* Grid Layout Fix */
   .contact-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    grid-template-columns: repeat(3, 1fr); /* Computer par 3 cards barabar */
     gap: 20px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 10px;
   }
 
-  /* Individual Card Styling */
+  /* Card Styling - Perfect Alignment */
   .contact-card {
     background: white;
-    border-radius: 15px;
-    padding: 35px 15px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border-radius: 12px;
+    padding: 40px 10px; /* Top/Bottom padding zyada ki hai */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border-bottom: 4px solid transparent;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px; /* Sab cards ka size ek jaisa rahega */
-    transition: transform 0.3s ease;
+    align-items: center; /* Horizontally center */
+    justify-content: center; /* Vertically center */
+    text-align: center;
+    min-height: 200px; /* Height fix kar di taaki sab ek line mein hon */
+    transition: all 0.3s ease;
+    box-sizing: border-box;
   }
 
   .contact-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    border-bottom: 4px solid #e94560;
   }
 
-  /* Icon Fix */
+  /* Icon Style */
   .contact-card .icon { 
     font-size: 45px; 
     margin-bottom: 15px; 
+    display: block;
     line-height: 1;
   }
 
-  /* Label Styling (Email, GitHub etc.) */
+  /* Heading (Email, GitHub etc) */
   .contact-card h3 { 
     font-size: 13px; 
     color: #888; 
-    margin: 0 0 10px 0; 
-    font-weight: 600;
-    text-transform: capitalize;
+    margin: 0 0 12px 0; 
+    font-weight: 500;
+    letter-spacing: 0.5px;
   }
 
-  /* Content/Link Styling */
+  /* Text & Links Style */
   .contact-card p, .contact-card a { 
     font-size: 14px; 
-    color: #1a1a2e; 
     font-weight: 700; 
-    margin: 0;
+    margin: 0; 
+    color: #1a1a2e;
     text-decoration: none;
-    word-break: break-all; /* Lambe emails ke liye safety */
+    line-height: 1.2;
+    word-wrap: break-word;
+    max-width: 100%;
   }
 
+  /* Link Color */
   .contact-card a { color: #e94560; }
 
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
+  /* Mobile Responsive - 1 Card per row */
+  @media (max-width: 800px) {
     .contact-cards {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     .contact-cards {
       grid-template-columns: 1fr;
     }
@@ -87,7 +95,7 @@ title: Contact
 
 <div class="contact-header">
   <h1>Contact Me</h1>
-  <p>Feel free to reach out anytime!</p>
+  <p>I'm always open to discussing new projects or opportunities.</p>
 </div>
 
 <div class="contact-cards">
