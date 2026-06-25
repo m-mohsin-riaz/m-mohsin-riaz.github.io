@@ -143,7 +143,6 @@ It was a proud moment to showcase a complete Machine Learning application develo
   style="width:480px; max-width:100%; border-radius:10px;">
   <p><em>Explaining the Machine Learning model and GUI to visitors.</em></p>
 </div>
-
 ---
 
 ## 🌟 Final Outcome
