@@ -2,7 +2,7 @@
 layout: post
 title: "Week 1 - First Day at UET"
 date: 2026-02-01
-tags: [semester1]
+
 ---
 
 ## 🗓️ Week 1 Highlights
