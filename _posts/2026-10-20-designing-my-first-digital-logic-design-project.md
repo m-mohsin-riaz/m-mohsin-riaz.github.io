@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Designing My First Digital Logic Design Project"
-date: 2026-10-20
+date: 2026-06-08
 tags: [semester2, dld, project]
 summary: "Designing and implementing a smart car parking system using digital logic concepts, logic gates, and circuit design."
 ---
