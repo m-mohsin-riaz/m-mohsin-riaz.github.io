@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building My First Machine Learning Model"
-date: 2026-06-18
+date: 2026-06-15
 tags: [semester1]
 summary: "My semester goal of learning Machine Learning, training my first prediction model, and presenting it at the project exhibition under the supervision of Dr. Bilal Ahmad."
 ---
