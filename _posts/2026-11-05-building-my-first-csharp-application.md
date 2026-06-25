@@ -71,11 +71,11 @@ The project demonstrated how databases and programming can work together to mana
 
 ---
 
-## 🎮 Creating a GUI-Based Game
+## 🎮 Creating a GUI-Based Game — Shadow Arise
 
-Along with the University Management System, we also worked on a GUI-based game using C# and Windows Forms.
+Along with the University Management System, we also developed a GUI-based game called **Shadow Arise** using C# and Windows Forms.
 
-This project helped us understand event-driven programming and graphical user interface development.
+This was one of the most creative and exciting parts of our lab work. Shadow Arise was our first complete game built entirely using C# Windows Forms.
 
 The game included:
 
@@ -85,9 +85,21 @@ The game included:
 - Game logic
 - Visual feedback
 
-Developing the game was both educational and enjoyable because it combined programming concepts with creativity.
+Developing Shadow Arise was both educational and enjoyable because it combined programming concepts with creativity. It showed us how software developers create interactive applications that users can enjoy and use easily.
 
-It also showed us how software developers create interactive applications that users can enjoy and use easily.
+---
+
+## 📸 Shadow Arise — Game Gallery
+
+<div style="text-align:center; margin:20px 0;">
+  <img src="{{ '/assets/images/shadow-arise-1.jpg' | relative_url }}" alt="Shadow Arise Game" style="width:320px; max-width:100%; border-radius:8px;">
+  <p><em>Shadow Arise — our first GUI-based game built in C#.</em></p>
+</div>
+
+<div style="text-align:center; margin:20px 0;">
+  <img src="{{ '/assets/images/shadow-arise-2.jpg' | relative_url }}" alt="Shadow Arise Interface" style="width:320px; max-width:100%; border-radius:8px;">
+  <p><em>Shadow Arise game interface showing the gameplay screen.</em></p>
+</div>
 
 ---
 
@@ -138,7 +150,7 @@ Some important features included:
 - Academic performance tracking
 - User-friendly interface
 
-### GUI-Based Game
+### Shadow Arise Game
 
 - Interactive controls
 - Real-time responses
@@ -147,31 +159,6 @@ Some important features included:
 - Visual interface
 
 These features helped us understand how professional software applications are developed.
-
----
-
-## 📸 Project Gallery
-
-### 📷 University Management System
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/csharp-project-1.jpg' | relative_url }}" alt="University Management System" style="max-width:90%; border-radius:10px;">
-  <p><em>University Management System Interface.</em></p>
-</div>
-
-### 📷 Student Record Management
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/csharp-project-2.jpg' | relative_url }}" alt="Student Management" style="max-width:90%; border-radius:10px;">
-  <p><em>Managing student records and aggregate calculations.</em></p>
-</div>
-
-### 📷 GUI-Based Game
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/csharp-project-3.jpg' | relative_url }}" alt="GUI Game" style="max-width:90%; border-radius:10px;">
-  <p><em>GUI-based game developed using C# Windows Forms.</em></p>
-</div>
 
 ---
 
@@ -210,7 +197,7 @@ Most importantly, I learned how theoretical programming concepts can be transfor
 
 ## 🎯 Final Thoughts
 
-Building these C# applications was one of the most rewarding experiences of my second semester. Developing a University Management System and a GUI-based game allowed me to apply programming concepts in practical scenarios and gain valuable software development experience.
+Building these C# applications was one of the most rewarding experiences of my second semester. Developing a University Management System and the Shadow Arise game allowed me to apply programming concepts in practical scenarios and gain valuable software development experience.
 
 The guidance provided during lectures and lab sessions, especially by **Ms. Rimsha**, helped me improve my technical skills and confidence as a Computer Engineering student.
 
@@ -219,25 +206,16 @@ This project strengthened my interest in software development and motivated me t
 ---
 
 #Semester2
-
 #CSharp
-
 #WindowsForms
-
 #UniversityManagementSystem
-
 #SoftwareDevelopment
-
 #GUI
-
+#ShadowArise
+#GameDevelopment
 #ProgrammingProject
-
 #ComputerEngineering
-
 #UETFaisalabad
-
 #StudentJourney
-
 #MsRimsha
-
 #CSharpProject
