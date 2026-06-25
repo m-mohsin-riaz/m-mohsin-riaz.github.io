@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Building My First Machine Learning Model"
@@ -19,11 +18,17 @@ Apart from academics, I also wanted to develop practical skills that would help 
 
 👨‍🏫 **Learning Beyond the Classroom with Dr. Bilal Ahmad**
 
-One of the people who inspired me during my first semester was **Dr. Bilal Ahmad**. He is an expert in Artificial Intelligence, Machine Learning, and Deep Learning. Throughout the semester, he encouraged students to explore modern technologies and work on practical projects instead of focusing only on theoretical concepts.
-
-Dr. Bilal Ahmad always motivated us to think beyond course material and learn skills that could help us solve real-world problems. His teaching style made advanced technologies like Machine Learning seem interesting and achievable even for beginners.
-
-Through his guidance, I became interested in Machine Learning and started learning how data can be used to make predictions and intelligent decisions.
+<div style="display:flex; align-items:center; gap:20px; margin:20px 0; flex-wrap:wrap;">
+  <div style="text-align:center;">
+    <img src="{{ '/assets/images/bilal-sir.jpg' | relative_url }}" alt="Dr. Bilal Ahmad" style="width:130px; height:130px; object-fit:cover; border-radius:50%; border:3px solid #3b82f6;">
+    <p style="margin:6px 0 0; font-weight:bold;">Dr. Bilal Ahmad</p>
+    <p style="margin:2px 0 0; font-size:0.8em; color:gray;">AI & Machine Learning Expert</p>
+  </div>
+  <div style="flex:1; min-width:200px;">
+    <p>One of the people who inspired me during my first semester was <strong>Dr. Bilal Ahmad</strong>. He is an expert in Artificial Intelligence, Machine Learning, and Deep Learning. Throughout the semester, he encouraged students to explore modern technologies and work on practical projects instead of focusing only on theoretical concepts.</p>
+    <p>Dr. Bilal Ahmad always motivated us to think beyond course material and learn skills that could help us solve real-world problems. Through his guidance, I became interested in Machine Learning and started learning how data can be used to make predictions and intelligent decisions.</p>
+  </div>
+</div>
 
 ---
 
@@ -45,11 +50,11 @@ During the project, we learned how to work with datasets and prepare data for tr
 
 Some of the tools and libraries we worked with included:
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Scikit-Learn
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-Learn
 
 We spent many hours cleaning data, understanding features, testing different approaches, and improving the model's performance.
 
@@ -65,12 +70,12 @@ This project taught me many valuable lessons.
 
 I learned:
 
-* How Machine Learning models are trained.
-* How datasets are prepared and analyzed.
-* The importance of data quality.
-* How predictions are generated.
-* How teamwork improves project outcomes.
-* How to solve technical problems through research and experimentation.
+- How Machine Learning models are trained.
+- How datasets are prepared and analyzed.
+- The importance of data quality.
+- How predictions are generated.
+- How teamwork improves project outcomes.
+- How to solve technical problems through research and experimentation.
 
 Most importantly, I learned that Machine Learning is not just about writing code. It is about understanding data and using technology to solve real-world problems.
 
@@ -90,23 +95,23 @@ The exhibition allowed us to showcase everything we had learned throughout the p
 
 ---
 
-🌟 Personal Growth and Development
+🌟 **Personal Growth and Development**
 
 Apart from technical learning, this project also contributed to my personal development.
 
 It helped me:
 
-* Improve communication skills.
-* Gain confidence in public speaking.
-* Learn teamwork and collaboration.
-* Develop patience while solving problems.
-* Build a professional mindset.
+- Improve communication skills.
+- Gain confidence in public speaking.
+- Learn teamwork and collaboration.
+- Develop patience while solving problems.
+- Build a professional mindset.
 
 These skills are just as important as technical knowledge and will continue to help me throughout my academic and professional journey.
 
 ---
 
-🚀 Looking Ahead
+🚀 **Looking Ahead**
 
 As I completed my first semester, I realized that many of my goals had already started becoming reality. I improved my programming skills, gained experience in Machine Learning, worked on a real-world project, and participated in an exhibition.
 
@@ -120,26 +125,12 @@ The experience of building and presenting my first Machine Learning model will a
 
 You can learn more about Dr. Bilal Ahmad through his professional profiles:
 
-🔗 LinkedIn: https://www.linkedin.com/in/drbilalphd/
+🔗 <a href="https://www.linkedin.com/in/drbilalphd/" target="_blank">LinkedIn</a>
 
-🔗 Google Scholar: https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en
+🔗 <a href="https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en" target="_blank">Google Scholar</a>
 
-🔗 Facebook: https://www.facebook.com/Dr.BilalAhm
+🔗 <a href="https://www.facebook.com/Dr.BilalAhm" target="_blank">Facebook</a>
 
 ---
 
-#MachineLearning
-
-#ArtificialIntelligence
-
-#Semester1
-
-#UETFaisalabad
-
-#ComputerEngineering
-
-#MLwithDrBilalAhmad
-
-#DrBilalAhmad
-
-#MLProject
+*#MachineLearning #ArtificialIntelligence #Semester1 #UETFaisalabad #ComputerEngineering #MLwithDrBilalAhmad #DrBilalAhmad #MLProject*
