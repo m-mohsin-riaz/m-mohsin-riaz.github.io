@@ -55,8 +55,8 @@ permalink: /myjourney/
   }
   .semester-card:hover { transform: translateY(-5px); }
   .semester-card .icon { font-size: 40px; margin-bottom: 15px; }
-  .semester-card h2 { font-size: 20px; margin-bottom: 8px; color: #1a1a2e; }
-  .semester-card p { font-size: 14px; color: #888; }
+  .semester-card h2 { font-size: 20px; margin-bottom: 8px; color: #1a1a2e; text-align: center; }
+  .semester-card p { font-size: 14px; color: #888; text-align: center; }
   .semester-card.coming-soon {
     border-left: 4px solid #ccc;
     opacity: 0.6;
