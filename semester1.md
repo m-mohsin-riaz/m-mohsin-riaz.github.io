@@ -18,14 +18,14 @@ permalink: /semester1/
   .back-btn {
     display: inline-block;
     margin-bottom: 25px;
-    background: #e94560;
+    background: #3b82f6;
     color: white;
     padding: 8px 18px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
   }
-  .back-btn:hover { background: #c73652; }
+  .back-btn:hover { background: #2563eb; }
   .info-section {
     background: white;
     border-radius: 12px;
@@ -34,7 +34,7 @@ permalink: /semester1/
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
   }
   .info-section h2 {
-    color: #e94560;
+    color: #3b82f6;
     font-size: 20px;
     margin-bottom: 15px;
     border-bottom: 2px solid #f4f6f9;
@@ -49,7 +49,7 @@ permalink: /semester1/
   }
   .subject-card {
     background: #f9f9f9;
-    border-left: 4px solid #e94560;
+    border-left: 4px solid #3b82f6;
     border-radius: 8px;
     padding: 15px 12px;
     text-align: center;
@@ -60,6 +60,11 @@ permalink: /semester1/
     font-weight: bold;
     color: #1a1a2e;
     margin-top: 8px;
+  }
+  .subject-card .teacher {
+    font-size: 11px;
+    color: #3b82f6;
+    margin-top: 4px;
   }
   .subject-card .type {
     font-size: 11px;
@@ -72,30 +77,30 @@ permalink: /semester1/
     padding: 25px 30px;
     margin-bottom: 20px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-    border-left: 4px solid #e94560;
+    border-left: 4px solid #3b82f6;
   }
   .post-card h2 { font-size: 20px; margin-bottom: 8px; }
   .post-card h2 a { color: #1a1a2e; text-decoration: none; }
-  .post-card h2 a:hover { color: #e94560; }
+  .post-card h2 a:hover { color: #3b82f6; }
   .post-date { color: #888; font-size: 13px; margin-bottom: 10px; }
   .post-excerpt { color: #555; font-size: 14px; line-height: 1.7; }
   .read-more {
     display: inline-block;
     margin-top: 12px;
-    color: #e94560;
+    color: #3b82f6;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
   }
 
-  /* --- New: Journey feature card --- */
+  /* --- Journey feature card --- */
   .journey-feature {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     border-radius: 15px;
     padding: 35px;
     text-align: center;
     color: white;
-    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .journey-feature .icon { font-size: 36px; margin-bottom: 10px; }
   .journey-feature h2 {
@@ -111,7 +116,7 @@ permalink: /semester1/
   }
   .journey-feature .journey-btn {
     display: inline-block;
-    background: #e94560;
+    background: #3b82f6;
     color: white;
     padding: 10px 24px;
     border-radius: 20px;
@@ -119,7 +124,7 @@ permalink: /semester1/
     font-size: 14px;
     font-weight: bold;
   }
-  .journey-feature .journey-btn:hover { background: #c73652; }
+  .journey-feature .journey-btn:hover { background: #2563eb; }
 </style>
 
 <a class="back-btn" href="/myjourney/">← Back to My Journey</a>
@@ -132,51 +137,70 @@ permalink: /semester1/
 <div class="info-section">
   <h2>📖 About This Semester</h2>
   <p>My first semester at UET Faisalabad was a life-changing experience. Moving into the hostel, attending university for the first time, making new friends, and learning new subjects all at once was both exciting and challenging. From struggling with Calculus and Physics to writing my first Python programs, every week taught me something new. I even completed a Machine Learning project in my very first semester, which gave me great confidence and motivation to keep growing.</p>
+</div>
 
+<div class="journey-feature">
+  <div class="icon">🧭</div>
+  <h2>My Semester Journey</h2>
+  <p>The full story of my first semester — in my own words.</p>
+  <a class="journey-btn" href="/semester1-journey/">Read My Full Journey →</a>
+</div>
+
+<div class="info-section">
+  <h2>📚 Subject Details</h2>
   <div class="subjects-grid">
     <div class="subject-card">
       <div class="icon">💻</div>
       <div class="name">Programming Fundamentals</div>
+      <div class="teacher">👨‍🏫 Dr. Bilal Ahmad</div>
       <div class="type">Theory</div>
     </div>
     <div class="subject-card">
       <div class="icon">📐</div>
       <div class="name">Calculus</div>
+      <div class="teacher">👩‍🏫 Mam Arshi</div>
       <div class="type">Theory</div>
     </div>
     <div class="subject-card">
       <div class="icon">🧮</div>
       <div class="name">Discrete Mathematics</div>
+      <div class="teacher">👨‍🏫 Sir Abdullah Bilal</div>
       <div class="type">Theory</div>
     </div>
     <div class="subject-card">
       <div class="icon">🖥️</div>
       <div class="name">AICT</div>
+      <div class="teacher">👩‍🏫 Mam Asia</div>
       <div class="type">Theory</div>
     </div>
     <div class="subject-card">
       <div class="icon">⚛️</div>
       <div class="name">Applied Physics</div>
+      <div class="teacher">👩‍🏫 Mam Nosheen</div>
       <div class="type">Theory</div>
     </div>
     <div class="subject-card">
       <div class="icon">📖</div>
       <div class="name">Fahm-e-Quran</div>
+      <div class="teacher">👨‍🏫 Dr. Aslam</div>
       <div class="type">Theory</div>
     </div>
     <div class="subject-card">
       <div class="icon">🔬</div>
       <div class="name">Lab - PF</div>
+      <div class="teacher">👨‍🏫 Dr. Bilal</div>
       <div class="type">Lab</div>
     </div>
     <div class="subject-card">
       <div class="icon">💾</div>
       <div class="name">Lab - AICT</div>
+      <div class="teacher">👩‍🏫 Mam Asia</div>
       <div class="type">Lab</div>
     </div>
     <div class="subject-card">
       <div class="icon">🧪</div>
       <div class="name">Lab - Physics</div>
+      <div class="teacher">👩‍🏫 Mam Sherish</div>
       <div class="type">Lab</div>
     </div>
   </div>
@@ -186,7 +210,7 @@ permalink: /semester1/
   <h2>📝 Posts</h2>
   {% assign sem1_posts = site.posts | where_exp: "post", "post.tags contains 'semester1'" %}
   {% if sem1_posts.size > 0 %}
-    {% for post in sem1_posts %}
+    {% for post in sem1_posts limit: 7 %}
     <div class="post-card">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p class="post-date">📅 {{ post.date | date: "%B %d, %Y" }}</p>
@@ -197,11 +221,4 @@ permalink: /semester1/
   {% else %}
     <p style="color:#888;">No posts added yet.</p>
   {% endif %}
-</div>
-
-<div class="journey-feature">
-  <div class="icon">🧭</div>
-  <h2>My First Semester Journey</h2>
-  <p>The full story of my first semester — in my own words.</p>
-  <a class="journey-btn" href="/semester1-journey/">Read My Full Journey →</a>
 </div>
