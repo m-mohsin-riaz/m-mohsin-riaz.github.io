@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Second Machine Learning Project"
+title: "Diabetes Risk Prediction"
 date: 2026-06-13
 tags: [semester2, machinelearning, ai]
 summary: "Developing an advanced diabetes prediction system using Machine Learning, Random Forest, Kaggle datasets, and a graphical user interface."
@@ -108,23 +108,23 @@ Every stage of development introduced new challenges and new learning opportunit
 
 After successfully completing the project, I had the opportunity to present it at the semester project exhibition.
 
-<div style="text-align:center; margin:25px 0;">
-  <img src="{{ '/assets/images/exhibition1.jpg' | relative_url }}" alt="Project Exhibition 1" style="width:480px; max-width:100%; border-radius:10px;">
-  <p><em>Presenting our Diabetes Prediction System during the project exhibition.</em></p>
+The exhibition allowed me to demonstrate the Diabetes Prediction System to teachers, students, and visitors. I explained how the dataset was collected, how the Random Forest model worked, how predictions were generated, and how the GUI interacted with the trained model.
+
+<div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:25px 0;">
+
+  <div style="text-align:center;">
+    <img src="{{ '/assets/images/exhibition1.jpg' | relative_url }}" alt="Project Exhibition 1" style="width:300px; height:220px; object-fit:cover; border-radius:10px;">
+    <p><em>Presenting the Diabetes Prediction System to teachers and visitors.</em></p>
+  </div>
+
+  <div style="text-align:center;">
+    <img src="{{ '/assets/images/exhibition2.jpg' | relative_url }}" alt="Project Exhibition 2" style="width:300px; height:220px; object-fit:cover; border-radius:10px;">
+    <p><em>Explaining the Random Forest model and GUI at the exhibition.</em></p>
+  </div>
+
 </div>
 
-<div style="text-align:center; margin:25px 0;">
-  <img src="{{ '/assets/images/exhibition2.jpg' | relative_url }}" alt="Project Exhibition 2" style="width:480px; max-width:100%; border-radius:10px;">
-  <p><em>Explaining the Machine Learning model and GUI to visitors.</em></p>
-</div>
-
-The exhibition allowed me to demonstrate the Diabetes Prediction System to teachers, students, and visitors.
-
-I explained how the dataset was collected, how the Random Forest model worked, how predictions were generated, and how the GUI interacted with the trained model.
-
-Presenting the project improved my communication skills and gave me confidence in explaining technical concepts to others.
-
-It was a proud moment to showcase a complete Machine Learning application developed through research, practice, and dedication under the supervision of Dr. Bilal Ahmad.
+Presenting the project improved my communication skills and gave me confidence in explaining technical concepts to others. It was a proud moment to showcase a complete Machine Learning application developed through research, practice, and dedication under the supervision of Dr. Bilal Ahmad.
 
 ---
 
