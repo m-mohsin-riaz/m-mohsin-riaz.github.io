@@ -4,35 +4,55 @@
   {%- assign node = site.pages | where: "name", item.file | first -%}
   {%- assign url = item.url | default: node.url -%}
   {%- assign title = item.title | default: node.title -%}
-  <a href="{{ url | relative_url }}">
+  <a href="{{ url | relative_url }}" class="nav-item" title="{{ title }}">
     {%- if item.icon -%}
       <svg aria-label="{{ title }}" width="1em" height="1em"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>
-    {%- else -%}
-      {{ title }}
     {%- endif -%}
+    <span class="nav-label">{{ title }}</span>
   </a>
 {%- endfor -%}
-  <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+  <button id="theme-toggle" class="nav-item" title="Theme">
+    <span class="theme-icon">🌙</span>
+    <span class="nav-label">Theme</span>
+  </button>
 </nav>
 {%- endif -%}
 
 <style>
-#theme-toggle {
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
+}
+.nav-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin: 0 !important;
   cursor: pointer;
   background: none;
   border: none;
+}
+.nav-item svg, .nav-item .theme-icon {
   font-size: 1.3em;
-  margin-left: 10px;
-  vertical-align: middle;
+}
+.nav-label {
+  font-size: 0.65em;
+  font-weight: normal;
+  white-space: nowrap;
+}
+#theme-toggle {
   transition: transform 0.3s ease;
 }
 #theme-toggle:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 </style>
 
 <script>
   const toggle = document.getElementById('theme-toggle');
+  const themeIcon = toggle.querySelector('.theme-icon');
   function getTheme() {
     return localStorage.getItem('theme') ||
            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -40,7 +60,7 @@
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     document.documentElement.style.colorScheme = theme;
-    toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
     localStorage.setItem('theme', theme);
   }
   applyTheme(getTheme());
