@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Making New Friends at University"
-date: 2026-06-21
+date: 2026-06-15
 tags: [semester1]
 summary: "One of the best parts of university life — meeting new people and building friendships that last a lifetime."
 ---
