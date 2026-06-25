@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "Building a Diabetes Prediction System Using Machine Learning"
-date: 2026-10-05
+title: "Second Machine Learning Project"
+date: 2026-06-13
 tags: [semester2, machinelearning, ai]
 summary: "Developing an advanced diabetes prediction system using Machine Learning, Random Forest, Kaggle datasets, and a graphical user interface."
 ---
-
-# Building a Diabetes Prediction System Using Machine Learning
 
 During my second semester at UET Faisalabad, I had the opportunity to work on one of the most advanced and exciting projects of my academic journey. Unlike my previous Machine Learning project, this project involved more advanced concepts, better implementation techniques, and a complete user-friendly system.
 
@@ -30,23 +28,15 @@ For this project, I used a diabetes dataset obtained from **Kaggle**.
 
 The dataset contained medical information such as:
 
-* Glucose Level
-* Blood Pressure
-* BMI
-* Insulin
-* Age
-* Pregnancies
-* Diabetes Outcome
+- Glucose Level
+- Blood Pressure
+- BMI
+- Insulin
+- Age
+- Pregnancies
+- Diabetes Outcome
 
-Before training the model, I carefully analyzed the dataset and performed preprocessing tasks.
-
-These tasks included:
-
-* Understanding dataset features
-* Cleaning data
-* Handling missing values
-* Data preparation
-* Splitting training and testing datasets
+Before training the model, I carefully analyzed the dataset and performed preprocessing tasks including understanding dataset features, cleaning data, handling missing values, data preparation, and splitting training and testing datasets.
 
 This stage taught me how important data quality is in Machine Learning projects. As Dr. Bilal Ahmad always emphasized, the quality of a dataset directly affects the performance of any Machine Learning model.
 
@@ -56,6 +46,11 @@ This stage taught me how important data quality is in Machine Learning projects.
 
 After preparing the dataset, I started training the Machine Learning model.
 
+<div style="text-align:center; margin:25px 0;">
+  <img src="{{ '/assets/images/diabetes-project.jpg' | relative_url }}" alt="Diabetes Prediction Project" style="width:480px; max-width:100%; border-radius:10px;">
+  <p><em>Our Diabetes Prediction System built using Random Forest Algorithm.</em></p>
+</div>
+
 For prediction, I used the **Random Forest Algorithm**, which is one of the most reliable and widely used machine learning algorithms.
 
 The model was trained using historical medical data and learned patterns that could be used to predict diabetes outcomes.
@@ -64,13 +59,13 @@ During development, I continuously tested and improved the model to achieve bett
 
 The project involved several important Machine Learning concepts such as:
 
-* Data preprocessing
-* Feature analysis
-* Model training
-* Model evaluation
-* Prediction generation
+- Data preprocessing
+- Feature analysis
+- Model training
+- Model evaluation
+- Prediction generation
 
-Working with these concepts gave me a much deeper understanding of Machine Learning. The guidance of [Dr. Bilal Ahmad](https://www.linkedin.com/in/drbilalphd/) was invaluable throughout this process.
+Working with these concepts gave me a much deeper understanding of Machine Learning. The guidance of <a href="https://www.linkedin.com/in/drbilalphd/" target="_blank">Dr. Bilal Ahmad</a> was invaluable throughout this process.
 
 ---
 
@@ -82,9 +77,9 @@ Instead of running predictions through code only, I connected the trained Machin
 
 The GUI allowed users to:
 
-* Enter patient information
-* Submit medical data
-* Receive instant prediction results
+- Enter patient information
+- Submit medical data
+- Receive instant prediction results
 
 This made the system easier to use and more practical for real-world applications.
 
@@ -98,14 +93,14 @@ This project was a major step forward in my Machine Learning journey.
 
 Through this project, I learned:
 
-* Advanced Machine Learning workflows
-* Real-world dataset handling
-* Model optimization techniques
-* User interface development
-* Software integration with AI models
-* Problem-solving and debugging
+- Advanced Machine Learning workflows
+- Real-world dataset handling
+- Model optimization techniques
+- User interface development
+- Software integration with AI models
+- Problem-solving and debugging
 
-Every stage of development introduced new challenges and new learning opportunities. You can explore more of Dr. Bilal Ahmad's research work on his [Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en).
+Every stage of development introduced new challenges and new learning opportunities. You can explore more of Dr. Bilal Ahmad's research work on his <a href="https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 
 ---
 
@@ -113,36 +108,24 @@ Every stage of development introduced new challenges and new learning opportunit
 
 After successfully completing the project, I had the opportunity to present it at the semester project exhibition.
 
+<div style="text-align:center; margin:25px 0;">
+  <img src="{{ '/assets/images/exhibition1.jpg' | relative_url }}" alt="Project Exhibition 1" style="width:480px; max-width:100%; border-radius:10px;">
+  <p><em>Presenting our Diabetes Prediction System during the project exhibition.</em></p>
+</div>
+
+<div style="text-align:center; margin:25px 0;">
+  <img src="{{ '/assets/images/exhibition2.jpg' | relative_url }}" alt="Project Exhibition 2" style="width:480px; max-width:100%; border-radius:10px;">
+  <p><em>Explaining the Machine Learning model and GUI to visitors.</em></p>
+</div>
+
 The exhibition allowed me to demonstrate the Diabetes Prediction System to teachers, students, and visitors.
 
-I explained:
-
-* How the dataset was collected
-* How the Random Forest model worked
-* How predictions were generated
-* How the GUI interacted with the trained model
+I explained how the dataset was collected, how the Random Forest model worked, how predictions were generated, and how the GUI interacted with the trained model.
 
 Presenting the project improved my communication skills and gave me confidence in explaining technical concepts to others.
 
 It was a proud moment to showcase a complete Machine Learning application developed through research, practice, and dedication under the supervision of Dr. Bilal Ahmad.
 
----
-
-## 📸 Exhibition Memories
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/exhibition1.jpg' | relative_url }}"
-  alt="Project Exhibition 1"
-  style="width:480px; max-width:100%; border-radius:10px;">
-  <p><em>Presenting our Diabetes Prediction System during the project exhibition.</em></p>
-</div>
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/exhibition2.jpg' | relative_url }}"
-  alt="Project Exhibition 2"
-  style="width:480px; max-width:100%; border-radius:10px;">
-  <p><em>Explaining the Machine Learning model and GUI to visitors.</em></p>
-</div>
 ---
 
 ## 🌟 Final Outcome
@@ -155,19 +138,14 @@ This experience strengthened my interest in Artificial Intelligence, Machine Lea
 
 ---
 
-#Semester2
-#MachineLearning
-#ArtificialIntelligence
-#DiabetesPrediction
-#RandomForest
-#Python
-#Kaggle
-#GUI
-#ProjectExhibition
-#ComputerEngineering
-#UETFaisalabad
-#AIProject
-#MLProject
-#StudentJourney
-#DrBilalAhmad
-#MLwithDrBilalAhmad
+You can learn more about Dr. Bilal Ahmad through his professional profiles:
+
+🔗 <a href="https://www.linkedin.com/in/drbilalphd/" target="_blank">LinkedIn</a>
+
+🔗 <a href="https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en" target="_blank">Google Scholar</a>
+
+🔗 <a href="https://www.facebook.com/Dr.BilalAhm" target="_blank">Facebook</a>
+
+---
+
+*#Semester2 #MachineLearning #ArtificialIntelligence #DiabetesPrediction #RandomForest #Python #Kaggle #GUI #ProjectExhibition #ComputerEngineering #UETFaisalabad #MLwithDrBilalAhmad #DrBilalAhmad #MLProject*
