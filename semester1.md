@@ -87,6 +87,39 @@ permalink: /semester1/
     font-weight: bold;
     text-decoration: none;
   }
+
+  /* --- New: Journey feature card --- */
+  .journey-feature {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 15px;
+    padding: 35px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+  .journey-feature .icon { font-size: 36px; margin-bottom: 10px; }
+  .journey-feature h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: none;
+  }
+  .journey-feature p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .journey-feature .journey-btn {
+    display: inline-block;
+    background: #e94560;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .journey-feature .journey-btn:hover { background: #c73652; }
 </style>
 
 <a class="back-btn" href="/myjourney/">← Back to My Journey</a>
@@ -164,4 +197,11 @@ permalink: /semester1/
   {% else %}
     <p style="color:#888;">No posts added yet.</p>
   {% endif %}
+</div>
+
+<div class="journey-feature">
+  <div class="icon">🧭</div>
+  <h2>My First Semester Journey</h2>
+  <p>The full story of my first semester — in my own words.</p>
+  <a class="journey-btn" href="/semester1-journey/">Read My Full Journey →</a>
 </div>
