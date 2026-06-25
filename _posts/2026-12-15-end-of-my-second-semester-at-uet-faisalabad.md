@@ -1,13 +1,10 @@
 ---
-
 layout: post
 title: "End of My Second Semester at UET Faisalabad"
 date: 2026-06-05
 tags: [semester2]
 summary: "A reflection on my second semester, the skills I developed, the projects I completed, and the memories I created along the way."
 ---
-
-# End of My Second Semester at UET Faisalabad
 
 As my second semester at UET Faisalabad came to an end, I found myself reflecting on a journey that was full of learning, challenges, achievements, and personal growth. Compared to my first semester, I felt much more confident because I had already experienced university life and understood how things worked.
 
@@ -23,12 +20,12 @@ The second semester introduced me to several important subjects that expanded my
 
 One of the major subjects was C# Programming. Through lectures and lab sessions, I learned:
 
-* Variables and Data Types
-* Conditional Statements
-* Loops
-* Functions
-* Object-Oriented Programming (OOP)
-* Windows Forms Development
+- Variables and Data Types
+- Conditional Statements
+- Loops
+- Functions
+- Object-Oriented Programming (OOP)
+- Windows Forms Development
 
 Learning C# helped me understand software development and strengthened my programming skills.
 
@@ -40,12 +37,12 @@ Database Systems was another important subject during the semester.
 
 Through theory and practical work, I learned:
 
-* SQL Queries
-* Database Design
-* ER Diagrams
-* Relationships
-* Normalization (1NF, 2NF, 3NF)
-* MySQL Database Management
+- SQL Queries
+- Database Design
+- ER Diagrams
+- Relationships
+- Normalization (1NF, 2NF, 3NF)
+- MySQL Database Management
 
 This subject helped me understand how modern applications store and manage information.
 
@@ -57,11 +54,11 @@ Digital Logic Design introduced me to the hardware side of Computer Engineering.
 
 I learned:
 
-* Logic Gates
-* Boolean Algebra
-* Karnaugh Maps
-* Circuit Design
-* Digital Systems
+- Logic Gates
+- Boolean Algebra
+- Karnaugh Maps
+- Circuit Design
+- Digital Systems
 
 This subject improved my logical thinking and problem-solving abilities.
 
@@ -77,11 +74,11 @@ One of my most advanced projects was developing a **Diabetes Prediction System**
 
 For this project:
 
-* I collected a dataset from Kaggle.
-* Trained a Random Forest model.
-* Processed and analyzed data.
-* Integrated a Graphical User Interface (GUI).
-* Presented the project during an exhibition.
+- I collected a dataset from Kaggle.
+- Trained a Random Forest model.
+- Processed and analyzed data.
+- Integrated a Graphical User Interface (GUI).
+- Presented the project during an exhibition.
 
 This project increased my interest in Artificial Intelligence and Machine Learning.
 
@@ -93,10 +90,10 @@ For Digital Logic Design, our team developed a **Smart Car Parking System**.
 
 The project involved:
 
-* Logic Gates
-* Circuit Design
-* Karnaugh Maps
-* Hardware Logic Implementation
+- Logic Gates
+- Circuit Design
+- Karnaugh Maps
+- Hardware Logic Implementation
 
 The project helped me understand how digital systems are designed and implemented.
 
@@ -106,10 +103,10 @@ The project helped me understand how digital systems are designed and implemente
 
 In C#, we developed a **University Management System** that could:
 
-* Store student information.
-* Calculate aggregate percentages.
-* Manage academic records.
-* Display results through a graphical interface.
+- Store student information.
+- Calculate aggregate percentages.
+- Manage academic records.
+- Display results through a graphical interface.
 
 This project improved my software development skills and understanding of GUI-based applications.
 
@@ -119,53 +116,35 @@ This project improved my software development skills and understanding of GUI-ba
 
 Another memorable part of this semester was spending time with friends.
 
-Throughout the semester, I worked, studied, and shared many experiences with my classmates and friends, including:
-
-* Umer
-* Ahmad
-* Talib
-* Salman
-* Bilal
-* Saeed
-
-Whether it was assignments, lab tasks, project work, or exam preparation, we supported each other throughout the semester.
-
-These friendships made university life much more enjoyable and memorable.
+Throughout the semester, I worked, studied, and shared many experiences with my classmates and friends, including Umer, Ahmad, Talib, Salman, Bilal, and Saeed. Whether it was assignments, lab tasks, project work, or exam preparation, we supported each other throughout the semester. These friendships made university life much more enjoyable and memorable.
 
 ---
 
 ## 🏠 Lessons from Hostel Life
 
-Living away from home continued to teach me valuable life lessons.
-
-Hostel life was not always easy. Sometimes we faced:
-
-* Financial challenges
-* Mess food issues
-* Busy schedules
-* Academic pressure
-
-However, these experiences helped me become more independent and responsible.
-
-I learned how to manage my daily routine, balance studies with personal responsibilities, and adapt to different situations.
+Living away from home continued to teach me valuable life lessons. Hostel life was not always easy — we faced financial challenges, mess food issues, busy schedules, and academic pressure. However, these experiences helped me become more independent and responsible. I learned how to manage my daily routine, balance studies with personal responsibilities, and adapt to different situations.
 
 ---
 
 ## 📸 Semester Memories
 
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/semester2-group1.jpg' | relative_url }}" alt="Semester Memories" style="max-width:90%; border-radius:10px;">
-  <p><em>Memories with friends during the second semester.</em></p>
-</div>
+<div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:25px 0;">
 
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/semester2-group2.jpg' | relative_url }}" alt="Semester Memories" style="max-width:90%; border-radius:10px;">
-  <p><em>Enjoying memorable moments after completing semester activities.</em></p>
-</div>
+  <div style="text-align:center; max-width:300px;">
+    <img src="{{ '/assets/images/semester2-group1.jpg' | relative_url }}" alt="Semester Memories 1" style="width:300px; height:220px; object-fit:cover; border-radius:10px;">
+    <p style="margin-top:10px; font-size:14px; color:#555;"><em>Spending time with friends during the second semester. These moments of laughter and togetherness made every difficult day much easier to handle.</em></p>
+  </div>
 
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/semester2-group3.jpg' | relative_url }}" alt="Semester Memories" style="max-width:90%; border-radius:10px;">
-  <p><em>Celebrating achievements and successful project completion.</em></p>
+  <div style="text-align:center; max-width:300px;">
+    <img src="{{ '/assets/images/semester2-group2.jpg' | relative_url }}" alt="Semester Memories 2" style="width:300px; height:220px; object-fit:cover; border-radius:10px;">
+    <p style="margin-top:10px; font-size:14px; color:#555;"><em>Enjoying memorable moments after completing semester activities. We celebrated every small achievement together as a group.</em></p>
+  </div>
+
+  <div style="text-align:center; max-width:300px;">
+    <img src="{{ '/assets/images/semester2-group3.jpg' | relative_url }}" alt="Semester Memories 3" style="width:300px; height:220px; object-fit:cover; border-radius:10px;">
+    <p style="margin-top:10px; font-size:14px; color:#555;"><em>Celebrating the successful completion of our second semester projects and exams. It was a proud and happy moment for all of us.</em></p>
+  </div>
+
 </div>
 
 ---
@@ -176,13 +155,13 @@ When I compare myself to the student who entered the second semester, I can clea
 
 This semester helped me:
 
-* Improve my programming skills.
-* Learn database management.
-* Understand digital logic systems.
-* Work on real projects.
-* Gain Machine Learning experience.
-* Improve communication and teamwork.
-* Become more confident and independent.
+- Improve my programming skills.
+- Learn database management.
+- Understand digital logic systems.
+- Work on real projects.
+- Gain Machine Learning experience.
+- Improve communication and teamwork.
+- Become more confident and independent.
 
 Every lecture, assignment, lab task, project, and examination contributed to my growth as a Computer Engineering student.
 
@@ -194,13 +173,10 @@ As I prepare to enter my third semester, I am excited about the opportunities an
 
 My goals for the upcoming semester are:
 
-* Learn advanced programming concepts.
-* Explore Artificial Intelligence further.
-* Build more practical projects.
-* Improve my technical skills.
-* Maintain strong academic performance.
+- Learn advanced programming concepts.
+- Explore Artificial Intelligence further.
+- Build more practical projects.
+- Improve my technical skills.
+- Maintain strong academic performance.
 
 The second semester was a major step forward in my academic journey, and I will always remember it as a semester filled with learning, growth, and unforgettable experiences.
-
-
-
