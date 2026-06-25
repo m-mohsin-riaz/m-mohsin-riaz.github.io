@@ -5,6 +5,9 @@ date: 2026-06-25
 tags: [semester1]
 summary: "My very first day at UET Faisalabad — nervousness, new faces, and the beginning of something big."
 ---
+
+![Campus]({{ "/assets/images/campus.jpg" | relative_url }})
+
 My first day at UET Faisalabad was one of the most memorable days of my life. I was very excited as well as nervous because it was the beginning of my university journey. I woke up early in the morning and got ready for university. I checked my bag, notebook, and other necessary things several times because I did not want to forget anything on my first day.
 
 When I left home, I was thinking about how university life would be different from school and college life. During the journey to UET Faisalabad, many thoughts were coming into my mind. I was wondering about my teachers, classmates, seniors, and the campus environment. As I reached the university gate, I saw many new students entering the campus. Everyone looked excited and a little nervous just like me.
@@ -15,6 +18,8 @@ After reaching my classroom, I met many students who were also new admissions. W
 
 After some time, our first lecture started. The teacher entered the classroom and welcomed all the students. He introduced himself and gave us an overview of the course. He explained the importance of discipline, attendance, and hard work in university life. The teacher also encouraged us to focus on learning new skills and improving our knowledge. Listening to him made me realize that university life would be more challenging but also more rewarding.
 
+![Hostel]({{ "/assets/images/hostel.jpg" | relative_url }})
+
 In the next lecture, another teacher introduced the subjects that we would study during the semester. He explained the course outline and grading system. He also told us about assignments, quizzes, presentations, and exams. Everything seemed new to me because the university system was different from what I had experienced before. However, I felt motivated to work hard and achieve good results.
 
 One of the most interesting parts of the day was the introduction session. Each student was asked to introduce himself. When my turn came, I stood up and introduced myself by telling my name, hometown, educational background, and interests. Although I was a little nervous, I felt confident after speaking. It was a good opportunity to know my classmates and help them know me as well.
@@ -24,6 +29,8 @@ During the break, I visited the university cafeteria with my new friends. We tal
 Later in the day, some seniors met us and welcomed us to the department. At first, I was slightly worried because many students hear different stories about seniors. However, my experience was very positive. The seniors were friendly and helpful. They introduced themselves and shared useful information about university life. They guided us about managing studies, maintaining attendance, preparing for exams, and participating in extracurricular activities.
 
 The seniors also gave us tips on how to stay organized throughout the semester. They advised us not to miss lectures and to complete assignments on time. They explained that consistency and hard work are the keys to success in engineering studies. Their guidance was very helpful because it gave us a better understanding of what to expect in the coming years.
+
+![Orientation]({{ "/assets/images/orientation.jpg" | relative_url }})
 
 After the lectures, I explored different parts of the campus with my friends. We visited the library, computer labs, and other important places. The library impressed me because it contained a large collection of books and study materials. I realized that these facilities would help me throughout my academic journey.
 
