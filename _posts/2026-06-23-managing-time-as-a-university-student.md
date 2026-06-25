@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Managing Time as a University Student"
-date: 2026-06-16
+date: 2026-06-17
 tags: [semester1]
 summary: "Learning how to balance lectures, assignments, programming labs, and deadlines during my first semester at UET Faisalabad."
 ---
