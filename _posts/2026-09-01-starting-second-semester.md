@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Starting My Second Semester at UET Faisalabad"
-date: 2026-09-01
+date: 2026-06-12
 tags:
   - semester2
 ---
