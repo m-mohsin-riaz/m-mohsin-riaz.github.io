@@ -202,32 +202,5 @@ My goals for the upcoming semester are:
 
 The second semester was a major step forward in my academic journey, and I will always remember it as a semester filled with learning, growth, and unforgettable experiences.
 
----
 
-#Semester2
 
-#SecondSemester
-
-#ComputerEngineering
-
-#UETFaisalabad
-
-#StudentJourney
-
-#MachineLearning
-
-#ArtificialIntelligence
-
-#DatabaseSystems
-
-#CSharp
-
-#DigitalLogicDesign
-
-#ProjectBasedLearning
-
-#UniversityLife
-
-#HostelLife
-
-#EngineeringStudent
