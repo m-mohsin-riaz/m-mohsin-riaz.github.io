@@ -10,7 +10,7 @@ My first day at UET Faisalabad was one of the most memorable days of my life. I 
 
 When I left home, I was thinking about how university life would be different from school and college life. During the journey to UET Faisalabad, many thoughts were coming into my mind. I was wondering about my teachers, classmates, seniors, and the campus environment. As I reached the university gate, I saw many new students entering the campus. Everyone looked excited and a little nervous just like me.
 
-![Campus]({{ "/assets/images/campus.jpg" | relative_url }})
+<img src="{{ '/assets/images/campus.jpg' | relative_url }}" alt="Campus" style="width:440px; height:320px; object-fit:cover; border-radius:8px;">
 
 The university campus looked very beautiful and well organized. There were different academic blocks, green lawns, and students moving around everywhere. The wide roads, tall buildings, and peaceful environment made me feel that this place was truly built for learning and growth. Since it was my first day, I did not know the exact location of my department and classrooms. I asked some students for guidance, and they helped me find my department. This made me feel comfortable because everyone seemed friendly and cooperative.
 
@@ -24,13 +24,13 @@ One of the most interesting parts of the day was the introduction session. Each 
 
 During the break, I visited the university cafeteria with my new friends. We talked about our first impressions of the university and discussed our expectations for the coming semesters. The cafeteria was crowded with students, and the atmosphere was lively. It was a good experience to sit with new friends and enjoy some refreshments together.
 
-![Orientation]({{ "/assets/images/orientation.jpg" | relative_url }})
+<img src="{{ '/assets/images/orientation.jpg' | relative_url }}" alt="Orientation" style="width:440px; height:320px; object-fit:cover; border-radius:8px;">
 
 Later in the day, some seniors met us and welcomed us to the department. At first, I was slightly worried because many students hear different stories about seniors. However, my experience was very positive. The seniors were friendly and helpful. They introduced themselves and shared useful information about university life. They guided us about managing studies, maintaining attendance, preparing for exams, and participating in extracurricular activities. The orientation session was a great opportunity to understand the rules, culture, and expectations of the university. It gave me a clear picture of what the next four years of my life would look like.
 
 The seniors also gave us tips on how to stay organized throughout the semester. They advised us not to miss lectures and to complete assignments on time. They explained that consistency and hard work are the keys to success in engineering studies. Their guidance was very helpful because it gave us a better understanding of what to expect in the coming years.
 
-![Hostel]({{ "/assets/images/hostel.jpg" | relative_url }})
+<img src="{{ '/assets/images/hostel.jpg' | relative_url }}" alt="Hostel" style="width:440px; height:320px; object-fit:cover; border-radius:8px;">
 
 After the lectures and orientation, I went to see my hostel room for the first time. The hostel was located inside the university campus, which made it very convenient. My room was simple but comfortable enough to study and rest. I met my roommates and we introduced ourselves to each other. Living away from home for the first time felt strange, but the friendly environment of the hostel made it easier. I realized that the hostel would not just be a place to sleep — it would be my second home for the next four years.
 
