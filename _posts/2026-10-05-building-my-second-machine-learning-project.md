@@ -1,11 +1,10 @@
 ---
-
 layout: post
 title: "Building a Diabetes Prediction System Using Machine Learning"
 date: 2026-10-05
 tags: [semester2, machinelearning, ai]
 summary: "Developing an advanced diabetes prediction system using Machine Learning, Random Forest, Kaggle datasets, and a graphical user interface."
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # Building a Diabetes Prediction System Using Machine Learning
 
@@ -21,7 +20,7 @@ The main objective of the project was to create an intelligent system that could
 
 Healthcare is one of the most important fields where Artificial Intelligence and Machine Learning can make a real difference. Through this project, I learned how data-driven technologies can assist in making healthcare predictions and support decision-making.
 
-This project was much more advanced than my previous work because it involved both Machine Learning model development and GUI integration.
+This project was supervised by **Dr. Bilal Ahmad**, who is an expert in Artificial Intelligence, Machine Learning, and Deep Learning at UET Faisalabad. Dr. Bilal Ahmad always encouraged us to work on medical datasets because they are collected with high precision and accuracy, making them ideal for training reliable Machine Learning models.
 
 ---
 
@@ -49,7 +48,7 @@ These tasks included:
 * Data preparation
 * Splitting training and testing datasets
 
-This stage taught me how important data quality is in Machine Learning projects.
+This stage taught me how important data quality is in Machine Learning projects. As Dr. Bilal Ahmad always emphasized, the quality of a dataset directly affects the performance of any Machine Learning model.
 
 ---
 
@@ -71,7 +70,7 @@ The project involved several important Machine Learning concepts such as:
 * Model evaluation
 * Prediction generation
 
-Working with these concepts gave me a much deeper understanding of Machine Learning compared to my earlier projects.
+Working with these concepts gave me a much deeper understanding of Machine Learning. The guidance of [Dr. Bilal Ahmad](https://www.linkedin.com/in/drbilalphd/) was invaluable throughout this process.
 
 ---
 
@@ -106,7 +105,7 @@ Through this project, I learned:
 * Software integration with AI models
 * Problem-solving and debugging
 
-Every stage of development introduced new challenges and new learning opportunities.
+Every stage of development introduced new challenges and new learning opportunities. You can explore more of Dr. Bilal Ahmad's research work on his [Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en).
 
 ---
 
@@ -125,25 +124,24 @@ I explained:
 
 Presenting the project improved my communication skills and gave me confidence in explaining technical concepts to others.
 
-It was a proud moment to showcase a complete Machine Learning application developed through research, practice, and dedication.
+It was a proud moment to showcase a complete Machine Learning application developed through research, practice, and dedication under the supervision of Dr. Bilal Ahmad.
 
 ---
 
 ## 📸 Exhibition Memories
 
 <div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/exhibition1.jpg' | relative_url }}" alt="Project Exhibition" style="max-width:90%; border-radius:10px;">
+  <img src="{{ '/assets/images/exhibition1.jpg' | relative_url }}"
+  alt="Project Exhibition 1"
+  style="width:480px; max-width:100%; border-radius:10px;">
   <p><em>Presenting our Diabetes Prediction System during the project exhibition.</em></p>
 </div>
 
 <div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/exhibition2.jpg' | relative_url }}" alt="Project Exhibition" style="max-width:90%; border-radius:10px;">
+  <img src="{{ '/assets/images/exhibition2.jpg' | relative_url }}"
+  alt="Project Exhibition 2"
+  style="width:480px; max-width:100%; border-radius:10px;">
   <p><em>Explaining the Machine Learning model and GUI to visitors.</em></p>
-</div>
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/exhibition3.jpg' | relative_url }}" alt="Project Exhibition" style="max-width:90%; border-radius:10px;">
-  <p><em>Showcasing the final project results and predictions.</em></p>
 </div>
 
 ---
@@ -159,29 +157,18 @@ This experience strengthened my interest in Artificial Intelligence, Machine Lea
 ---
 
 #Semester2
-
 #MachineLearning
-
 #ArtificialIntelligence
-
 #DiabetesPrediction
-
 #RandomForest
-
 #Python
-
 #Kaggle
-
 #GUI
-
 #ProjectExhibition
-
 #ComputerEngineering
-
 #UETFaisalabad
-
 #AIProject
-
 #MLProject
-
 #StudentJourney
+#DrBilalAhmad
+#MLwithDrBilalAhmad
