@@ -2,7 +2,7 @@
 
 layout: post
 title: "Preparing for My Semester Exams"
-date: 2026-11-20
+date: 2026-06-06
 tags: [semester2, exams]
 summary: "My experience preparing for midterm and final exams, managing assignments, lab manuals, and balancing university life."
 ---
