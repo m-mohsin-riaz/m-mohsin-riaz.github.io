@@ -2,7 +2,7 @@
 ---
 layout: post
 title: "End of My First Semester at UET Faisalabad"
-date: 2026-06-20
+date: 2026-06-14
 tags: [semester1]
 summary: "A reflection on my first semester, the lessons I learned, the challenges I faced, and the memorable final day spent with friends."
 ---
