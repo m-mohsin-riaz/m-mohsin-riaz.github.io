@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Computer Lab Experience"
-date: 2026-06-14
+date: 2026-06-16
 tags: [semester1]
 summary: "My very first computer lab at UET Faisalabad — nervousness, Python programming, and an inspiring teacher."
 ---
