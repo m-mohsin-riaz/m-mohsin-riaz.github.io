@@ -5,8 +5,7 @@ title: "Managing Time as a University Student"
 date: 2026-06-23
 tags: [semester1]
 summary: "Learning how to balance lectures, assignments, programming labs, and deadlines during my first semester at UET Faisalabad."
----
-```
+
 
 ⏰ **Learning the Importance of Time Management**
 
