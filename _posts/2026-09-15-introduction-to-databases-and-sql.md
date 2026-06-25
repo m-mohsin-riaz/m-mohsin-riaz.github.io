@@ -5,7 +5,6 @@ title: "Introduction to Databases and SQL"
 date: 2026-09-15
 tags: [semester2, database, sql]
 summary: "Learning database concepts, SQL queries, normalization, and practical database design during my second semester."
----------------------------------------------------------------------------------------------------------------------------
 
 # Introduction to Databases and SQL
 
