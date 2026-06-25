@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Day at UET Faisalabad"
-date: 2026-06-25
+date: 2026-06-19
 tags: [semester1]
 summary: "My very first day at UET Faisalabad — nervousness, new faces, and the beginning of something big."
 ---
