@@ -1,11 +1,10 @@
-
 ---
 layout: post
 title: "Managing Time as a University Student"
 date: 2026-06-23
 tags: [semester1]
 summary: "Learning how to balance lectures, assignments, programming labs, and deadlines during my first semester at UET Faisalabad."
-
+---
 
 ⏰ **Learning the Importance of Time Management**
 
@@ -25,11 +24,7 @@ When I started university, everything was new to me. Every subject had its own a
   </div>
   <div style="flex:1; min-width:200px;">
     <p>One of the teachers who greatly influenced my study habits was <strong>Dr. Bilal Ahmad</strong>. Besides teaching Programming Fundamentals, he continuously encouraged students to stay organized and complete their work on time.</p>
-
-```
-<p>Dr. Bilal Ahmad is an expert in Artificial Intelligence, Machine Learning, and Deep Learning. He often reminded us that success in programming comes through consistency and regular practice. His advice helped many students improve both their coding skills and their ability to manage time effectively.</p>
-```
-
+    <p>Dr. Bilal Ahmad is an expert in Artificial Intelligence, Machine Learning, and Deep Learning. He often reminded us that success in programming comes through consistency and regular practice. His advice helped many students improve both their coding skills and their ability to manage time effectively.</p>
   </div>
 </div>
 
@@ -51,11 +46,11 @@ After each lab, we were often assigned tasks based on what we had learned. These
 
 The manuals usually contained:
 
-* Objectives of the experiment
-* Program code
-* Output screenshots
-* Explanation of concepts
-* Conclusions
+- Objectives of the experiment
+- Program code
+- Output screenshots
+- Explanation of concepts
+- Conclusions
 
 Completing these manuals properly required time and concentration. If I delayed the work, it became difficult to remember the concepts discussed during the lab session.
 
@@ -67,11 +62,11 @@ Like many first-semester students, I faced several challenges while managing my 
 
 Some of the common difficulties included:
 
-* Understanding new programming concepts
-* Completing assignments before deadlines
-* Preparing manuals after every lab
-* Managing multiple subjects together
-* Fixing programming errors and debugging code
+- Understanding new programming concepts
+- Completing assignments before deadlines
+- Preparing manuals after every lab
+- Managing multiple subjects together
+- Fixing programming errors and debugging code
 
 Sometimes several assignments and quizzes were scheduled during the same week. These situations taught me the importance of planning ahead and avoiding procrastination.
 
@@ -83,11 +78,11 @@ To stay organized, I created a simple study schedule.
 
 After university, I usually:
 
-* Reviewed lecture notes
-* Completed pending assignments
-* Worked on programming tasks
-* Prepared lab manuals
-* Practiced Python coding
+- Reviewed lecture notes
+- Completed pending assignments
+- Worked on programming tasks
+- Prepared lab manuals
+- Practiced Python coding
 
 This routine helped me stay focused and reduced last-minute stress before deadlines.
 
@@ -97,12 +92,12 @@ This routine helped me stay focused and reduced last-minute stress before deadli
 
 As the semester progressed, I learned several valuable lessons:
 
-* Attend lectures regularly.
-* Start assignments early.
-* Never delay lab manuals.
-* Practice programming consistently.
-* Complete tasks before deadlines.
-* Follow a study schedule every day.
+- Attend lectures regularly.
+- Start assignments early.
+- Never delay lab manuals.
+- Practice programming consistently.
+- Complete tasks before deadlines.
+- Follow a study schedule every day.
 
 These habits not only improved my academic performance but also helped me become more disciplined and responsible.
 
@@ -120,18 +115,12 @@ Today, I understand that time management is not just about meeting deadlines. It
 
 You can learn more about Dr. Bilal Ahmad through his professional profiles:
 
-🔗 LinkedIn: https://www.linkedin.com/in/drbilalphd/
+🔗 <a href="https://www.linkedin.com/in/drbilalphd/" target="_blank">LinkedIn</a>
 
-🔗 Google Scholar: https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en
+🔗 <a href="https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en" target="_blank">Google Scholar</a>
 
-🔗 Facebook: https://www.facebook.com/Dr.BilalAhm
+🔗 <a href="https://www.facebook.com/Dr.BilalAhm" target="_blank">Facebook</a>
 
 ---
 
-#UniversityLife #TimeManagement #ProgrammingFundamentals #UETFaisalabad #Semester1 #ComputerEngineering
-
-#MLwithDrBilalAhmad
-
-#DrBilalAhmad
-
-#MLProject
+*#UniversityLife #TimeManagement #ProgrammingFundamentals #UETFaisalabad #Semester1 #ComputerEngineering #MLwithDrBilalAhmad #DrBilalAhmad #MLProject*
