@@ -3,7 +3,6 @@ layout: page
 title: My Journey
 permalink: /myjourney/
 ---
-
 <style>
   .journey-header {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
@@ -58,6 +57,24 @@ permalink: /myjourney/
   .semester-card .icon { font-size: 40px; margin-bottom: 15px; }
   .semester-card h2 { font-size: 20px; margin-bottom: 8px; color: #1a1a2e; }
   .semester-card p { font-size: 14px; color: #888; }
+  .semester-card.coming-soon {
+    border-left: 4px solid #ccc;
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .semester-card.coming-soon h2 { color: #999; }
+  .coming-badge {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #999;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
 </style>
 
 <div class="journey-header">
@@ -85,4 +102,40 @@ permalink: /myjourney/
     <h2>Semester 2</h2>
     <p>My second semester experience</p>
   </a>
+  <div class="semester-card coming-soon">
+    <div class="icon">⏳</div>
+    <h2>Semester 3</h2>
+    <p>Posts will be coming soon</p>
+    <span class="coming-badge">COMING SOON</span>
+  </div>
+  <div class="semester-card coming-soon">
+    <div class="icon">⏳</div>
+    <h2>Semester 4</h2>
+    <p>Posts will be coming soon</p>
+    <span class="coming-badge">COMING SOON</span>
+  </div>
+  <div class="semester-card coming-soon">
+    <div class="icon">⏳</div>
+    <h2>Semester 5</h2>
+    <p>Posts will be coming soon</p>
+    <span class="coming-badge">COMING SOON</span>
+  </div>
+  <div class="semester-card coming-soon">
+    <div class="icon">⏳</div>
+    <h2>Semester 6</h2>
+    <p>Posts will be coming soon</p>
+    <span class="coming-badge">COMING SOON</span>
+  </div>
+  <div class="semester-card coming-soon">
+    <div class="icon">⏳</div>
+    <h2>Semester 7</h2>
+    <p>Posts will be coming soon</p>
+    <span class="coming-badge">COMING SOON</span>
+  </div>
+  <div class="semester-card coming-soon">
+    <div class="icon">⏳</div>
+    <h2>Semester 8</h2>
+    <p>Posts will be coming soon</p>
+    <span class="coming-badge">COMING SOON</span>
+  </div>
 </div>
