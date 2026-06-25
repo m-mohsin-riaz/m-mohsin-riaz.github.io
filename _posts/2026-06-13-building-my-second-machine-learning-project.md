@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Diabetes Risk Prediction"
-date: 2026-06-13
+date: 2026-06-07
 tags: [semester2, machinelearning, ai]
 summary: "Developing an advanced diabetes prediction system using Machine Learning, Random Forest, Kaggle datasets, and a graphical user interface."
 ---
