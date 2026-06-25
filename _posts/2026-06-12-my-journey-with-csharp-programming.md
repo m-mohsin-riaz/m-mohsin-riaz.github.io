@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Journey with C# Programming"
-date: 2026-06-12
+date: 2026-06-10
 tags: [semester2, csharp, programming]
 summary: "Learning C# programming during my second semester, exploring object-oriented concepts, and developing practical coding skills."
 ---
