@@ -1,4 +1,4 @@
-```yaml
+
 ---
 layout: post
 title: "Managing Time as a University Student"
