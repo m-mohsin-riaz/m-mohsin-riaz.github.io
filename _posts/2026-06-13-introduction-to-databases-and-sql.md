@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Databases and SQL"
-date: 2026-06-13
+date: 2026-06-11
 tags: [semester2, database, sql]
 summary: "Learning database concepts, SQL queries, normalization, and practical database design during my second semester."
 ---
