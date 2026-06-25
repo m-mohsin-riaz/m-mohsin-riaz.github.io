@@ -20,14 +20,9 @@ Apart from academics, one of the best parts of this semester was making new frie
 
 ## 📸 Semester Memories
 
-<div style="text-align:center; margin:25px 0;">
-  <img src="{{ '/assets/images/group-photo-1.jpg' | relative_url }}" alt="Friends at UET Faisalabad" style="max-width:90%; border-radius:10px;">
-  <p><em>Memories with friends at the end of our first semester.</em></p>
-</div>
-
-<div style="text-align:center; margin:25px 0;">
-  <img src="{{ '/assets/images/group-photo-2.jpg' | relative_url }}" alt="Classmates and Friends" style="max-width:90%; border-radius:10px;">
-  <p><em>Celebrating the completion of our first semester together.</em></p>
+<div style="text-align:center; margin:20px 0;">
+  <img src="{{ '/assets/images/group-photo-1.jpg' | relative_url }}" alt="Friends at UET Faisalabad" style="width:320px; max-width:100%; border-radius:8px;">
+  <p><em>Celebrating the completion of our first semester with friends.</em></p>
 </div>
 
 ---
@@ -54,4 +49,12 @@ As I move toward the next semester, I am excited to learn more, face new challen
 
 ---
 
-*#Semester1 #UETFaisalabad #ComputerEngineering #UniversityLife #FirstSemester #StudentJourney #MLwithDrBilalAhmad #DrBilalAhmad #MLProject*
+#Semester1
+#UETFaisalabad
+#ComputerEngineering
+#UniversityLife
+#FirstSemester
+#StudentJourney
+#MLwithDrBilalAhmad
+#DrBilalAhmad
+#MLProject
