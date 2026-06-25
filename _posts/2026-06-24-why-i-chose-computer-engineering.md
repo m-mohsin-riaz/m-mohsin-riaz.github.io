@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I Chose Computer Engineering"
-date: 2026-06-17
+date: 2026-06-19
 tags: [semester1]
 summary: "My journey of choosing Computer Engineering — curiosity, passion, and a vision for the future."
 ---
