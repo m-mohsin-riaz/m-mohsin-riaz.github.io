@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Designing My First Digital Logic Design Project"
 date: 2026-10-20
@@ -103,6 +102,15 @@ Testing and debugging the circuit required patience and teamwork, but it helped 
 
 ---
 
+## 📸 Project Photo
+
+<div style="text-align:center; margin:20px 0;">
+  <img src="{{ '/assets/images/dld-project-1.jpg' | relative_url }}" alt="DLD Car Parking Project" style="width:320px; max-width:100%; border-radius:8px;">
+  <p><em>Our Smart Car Parking System circuit design.</em></p>
+</div>
+
+---
+
 ## ⚠️ Challenges We Faced
 
 Like every engineering project, we faced several challenges during development.
@@ -154,42 +162,11 @@ The successful demonstration increased my confidence and gave me practical exper
 
 ---
 
-## 📸 Project Gallery
-
-### 📷 Project Photo 1
+## 📸 Group Photo
 
 <div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/dld-project-1.jpg' | relative_url }}" alt="DLD Project Photo 1" style="max-width:90%; border-radius:10px;">
-</div>
-
-### 📷 Project Photo 2
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/dld-project-2.jpg' | relative_url }}" alt="DLD Project Photo 2" style="max-width:90%; border-radius:10px;">
-</div>
-
-### 📷 Project Photo 3
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/dld-project-3.jpg' | relative_url }}" alt="DLD Project Photo 3" style="max-width:90%; border-radius:10px;">
-</div>
-
-### 📷 Project Photo 4
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/dld-project-4.jpg' | relative_url }}" alt="DLD Project Photo 4" style="max-width:90%; border-radius:10px;">
-</div>
-
-### 📷 Project Photo 5
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/dld-project-5.jpg' | relative_url }}" alt="DLD Project Photo 5" style="max-width:90%; border-radius:10px;">
-</div>
-
-### 📷 Project Photo 6
-
-<div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/images/dld-project-6.jpg' | relative_url }}" alt="DLD Project Photo 6" style="max-width:90%; border-radius:10px;">
+  <img src="{{ '/assets/images/dld-group-photo.jpg' | relative_url }}" alt="DLD Project Group Photo" style="width:320px; max-width:100%; border-radius:8px;">
+  <p><em>With our team after successfully completing the DLD project.</em></p>
 </div>
 
 ---
@@ -221,25 +198,14 @@ This experience will always remain an important milestone in my engineering jour
 ---
 
 #Semester2
-
 #DigitalLogicDesign
-
 #DLDProject
-
 #CarParkingSystem
-
 #LogicGates
-
 #KarnaughMap
-
 #CircuitDesign
-
 #ComputerEngineering
-
 #UETFaisalabad
-
 #EngineeringProjects
-
 #SirAbdullah
-
 #StudentJourney
