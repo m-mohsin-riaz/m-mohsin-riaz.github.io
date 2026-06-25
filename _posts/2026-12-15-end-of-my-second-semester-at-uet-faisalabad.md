@@ -2,7 +2,7 @@
 
 layout: post
 title: "End of My Second Semester at UET Faisalabad"
-date: 2026-12-15
+date: 2026-06-05
 tags: [semester2]
 summary: "A reflection on my second semester, the skills I developed, the projects I completed, and the memories I created along the way."
 ---
