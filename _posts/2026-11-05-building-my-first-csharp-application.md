@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building My First C# Application"
-date: 2026-11-05
+date: 2026-06-09
 tags: [semester2, csharp, project]
 summary: "Developing a university management system and a GUI-based game using C# Windows Forms during my second semester."
 ---
