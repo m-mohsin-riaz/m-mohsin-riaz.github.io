@@ -15,12 +15,8 @@ baseurl: ""
 
 navigation:
   - {file: "myjourney.md", title: "My Journey", icon: "book-open"}
-  - {file: "about.md",     title: "About",      icon: "user"}
-  - {file: "contact.md",   title: "Contact",    icon: "envelope"}
-external:
-  - {title: GitHub,    icon: github,   url: "https://github.com/m-mohsin-riaz"}
-  - {title: Mail,      icon: envelope, url: "mailto:wmohsinriaz@gmail.com"}
-  - {title: Subscribe, icon: rss,      url: "/feed.xml"}
+  - {file: "about.md",     title: "About Me",    icon: "user"}
+  - {file: "contact.md",   title: "Contact Me",  icon: "envelope"}
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
