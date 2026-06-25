@@ -132,28 +132,3 @@ These experiences not only helped me perform better academically but also taught
 
 ---
 
-#Semester2
-
-#ExamPreparation
-
-#FinalExams
-
-#MidtermExams
-
-#StudentLife
-
-#DatabaseSystems
-
-#DigitalLogicDesign
-
-#CSharp
-
-#LabManuals
-
-#GroupStudy
-
-#ComputerEngineering
-
-#UETFaisalabad
-
-#StudentJourney
