@@ -22,7 +22,6 @@ title: About
     gap: 12px;
   }
   .about-header h1 span.me { color: #c7c2ff; }
-  .about-header p { color: rgba(255,255,255,0.75); font-size: 16px; margin: 0; }
 
   /* Intro */
   .intro-card {
@@ -83,16 +82,18 @@ title: About
   }
   .tile-value.open { color: #16a34a; }
 
-  /* Section Heading - LEFT ALIGNED */
+  /* Section Heading - FORCED LEFT ALIGNED */
   .section-heading {
-    font-size: 22px;
-    font-weight: 800;
-    color: #1a1a2e;
-    margin: 0 0 6px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: left;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    color: #1a1a2e !important;
+    margin: 0 0 6px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
   }
   .section-divider {
     border: none;
@@ -192,7 +193,6 @@ title: About
 <!-- Header -->
 <div class="about-header">
   <h1>👤 About <span class="me">Me</span></h1>
-  <p>Computer Engineering Student &nbsp;|&nbsp; Writer</p>
 </div>
 
 <!-- Intro -->
