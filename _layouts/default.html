@@ -1,7 +1,63 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
-
 {% include head.html %}
+
+<style>
+  /* Global theme variables */
+  body { background: #0f0e17; color: #e0e6f0; transition: background 0.3s, color 0.3s; }
+  body.light-mode { background: #f0f2f8 !important; color: #1a1a2e !important; }
+
+  /* Header light mode */
+  body.light-mode header {
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  }
+  body.light-mode header h1 a,
+  body.light-mode header a { color: #1a1a2e !important; }
+
+  /* Content light mode */
+  body.light-mode .page-content,
+  body.light-mode article,
+  body.light-mode main { background: #f0f2f8 !important; color: #1a1a2e !important; }
+
+  body.light-mode h1, body.light-mode h2,
+  body.light-mode h3, body.light-mode p,
+  body.light-mode li, body.light-mode span,
+  body.light-mode td, body.light-mode th { color: #1a1a2e !important; }
+
+  /* Footer light mode */
+  body.light-mode footer { background: #ffffff !important; color: #1a1a2e !important; }
+
+  /* ── Global Theme Toggle Button ── */
+  #global-theme-btn {
+    position: fixed;
+    top: 14px;
+    right: 18px;
+    z-index: 99999;
+    background: rgba(233,69,96,0.15);
+    border: 2px solid #e94560;
+    border-radius: 50px;
+    padding: 7px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 16px rgba(233,69,96,0.3);
+    text-decoration: none;
+  }
+  #global-theme-btn:hover {
+    background: rgba(233,69,96,0.3);
+    box-shadow: 0 0 24px rgba(233,69,96,0.5);
+    transform: scale(1.05);
+  }
+  body.light-mode #global-theme-btn { color: #1a1a2e; }
+</style>
 
 <header class="hover smooth">
   {% unless site.show_minimal and site.navigation %}
@@ -9,6 +65,12 @@
   {% endunless %}
   {% include menu.html menu=site.navigation %}
 </header>
+
+<!-- Global Theme Toggle — Har page pe dikhega -->
+<button id="global-theme-btn" onclick="toggleGlobalTheme()">
+  <span id="g-ic">🌙</span>
+  <span id="g-lbl">Dark</span>
+</button>
 
 {{ content }}
 
@@ -18,5 +80,30 @@
   {% include menu.html menu=site.footer %}
 </footer>
 {%- endif -%}
+
+<script>
+  // Immediately apply saved theme (before page renders)
+  (function() {
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  })();
+
+  // Set correct icon after DOM loads
+  document.addEventListener('DOMContentLoaded', function() {
+    var isLight = document.body.classList.contains('light-mode');
+    var ic = document.getElementById('g-ic');
+    var lbl = document.getElementById('g-lbl');
+    if (ic) ic.textContent = isLight ? '☀️' : '🌙';
+    if (lbl) lbl.textContent = isLight ? 'Light' : 'Dark';
+  });
+
+  function toggleGlobalTheme() {
+    var isLight = document.body.classList.toggle('light-mode');
+    document.getElementById('g-ic').textContent = isLight ? '☀️' : '🌙';
+    document.getElementById('g-lbl').textContent = isLight ? 'Light' : 'Dark';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  }
+</script>
 
 </html>
