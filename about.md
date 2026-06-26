@@ -199,7 +199,7 @@ title: About
 <div class="intro-card">
   <div class="intro-avatar">👋🏼</div>
   <div>
-    <h2>Hi, I'm <span>Mohsin Riaz</span></div>
+    <h2>Hi, I'm <span>Mohsin Riaz</span></h2>
     <p>A <strong>Computer Engineering student</strong> from Lahore, Pakistan. I love building clean websites and sharing my real life experiences through writing.</p>
     <p>I came to university leaving my comfort zone behind — facing nervousness, distance from home, and many unexpected challenges. But every difficulty taught me something new about patience, resilience, and growth.</p>
     <p>When I'm not coding, I'm writing about my <strong>university journey</strong> — the friendships, the tough weeks, the exams, and everything in between. Real stories, real emotions.</p>
