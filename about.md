@@ -1,4 +1,5 @@
 ---
+custom_css: true
 layout: default
 title: About
 ---
