@@ -3,6 +3,7 @@ layout: default
 title: About
 ---
 <style>
+  /* Header */
   .about-header {
     background: linear-gradient(135deg, #4f46e5, #6366f1);
     color: white;
@@ -21,8 +22,9 @@ title: About
     gap: 12px;
   }
   .about-header h1 span.me { color: #c7c2ff; }
-  .about-header p { color: rgba(255,255,255,0.75); font-size: 16px; margin: 0; letter-spacing: 0.5px; }
+  .about-header p { color: rgba(255,255,255,0.75); font-size: 16px; margin: 0; }
 
+  /* Intro */
   .intro-card {
     background: white;
     border-radius: 14px;
@@ -36,27 +38,30 @@ title: About
   .intro-avatar { font-size: 64px; flex-shrink: 0; line-height: 1; }
   .intro-card h2 { font-size: 24px; font-weight: 800; margin: 0 0 14px 0; color: #1a1a2e; }
   .intro-card h2 span { color: #4f46e5; }
-  .intro-card p { font-size: 15px; color: #555; line-height: 1.8; margin: 0 0 12px 0; }
+  .intro-card p { font-size: 15px; color: #555; line-height: 1.8; margin: 0 0 12px 0; text-align: left; word-spacing: normal; letter-spacing: normal; }
   .intro-card p:last-child { margin: 0; }
   .intro-card strong { color: #1a1a2e; }
 
+  /* Info Grid */
   .info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
   .info-tile {
     background: white;
     border-radius: 12px;
-    padding: 22px 20px;
+    padding: 20px 18px;
     box-shadow: 0 3px 14px rgba(0,0,0,0.06);
     border-left: 4px solid #4f46e5;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
+    min-width: 0;
   }
-  .info-tile .tile-icon { font-size: 36px; flex-shrink: 0; line-height: 1; }
+  .info-tile .tile-icon { font-size: 32px; flex-shrink: 0; line-height: 1; }
+  .info-tile .tile-text { min-width: 0; }
   .info-tile .tile-label {
     font-size: 11px;
     font-weight: 600;
@@ -64,16 +69,21 @@ title: About
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0 0 4px 0;
+    white-space: nowrap;
   }
   .info-tile .tile-value {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: #1a1a2e;
     margin: 0;
     line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .tile-value.open { color: #16a34a; }
 
+  /* Section Heading - LEFT ALIGNED */
   .section-heading {
     font-size: 22px;
     font-weight: 800;
@@ -82,6 +92,7 @@ title: About
     display: flex;
     align-items: center;
     gap: 10px;
+    text-align: left;
   }
   .section-divider {
     border: none;
@@ -94,7 +105,7 @@ title: About
     background: white;
     border-radius: 14px;
     padding: 28px 32px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     box-shadow: 0 3px 16px rgba(0,0,0,0.07);
   }
   .edu-entry {
@@ -107,16 +118,16 @@ title: About
   .edu-entry:last-child { border-bottom: none; padding-bottom: 0; }
   .edu-entry:first-child { padding-top: 0; }
   .edu-icon { font-size: 44px; flex-shrink: 0; line-height: 1; }
-  .edu-entry h3 { font-size: 17px; font-weight: 800; color: #1a1a2e; margin: 0 0 4px 0; }
-  .edu-entry .edu-inst { color: #4f46e5; font-size: 14px; font-weight: 600; margin: 0 0 4px 0; }
-  .edu-entry .edu-meta { color: #888; font-size: 13px; margin: 0; }
+  .edu-entry h3 { font-size: 17px; font-weight: 800; color: #1a1a2e; margin: 0 0 4px 0; text-align: left; }
+  .edu-entry .edu-inst { color: #4f46e5; font-size: 14px; font-weight: 600; margin: 0 0 4px 0; text-align: left; }
+  .edu-entry .edu-meta { color: #888; font-size: 13px; margin: 0; text-align: left; word-spacing: normal; letter-spacing: normal; }
 
   /* Skills */
   .skills-wrap {
     background: white;
     border-radius: 14px;
     padding: 28px 32px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     box-shadow: 0 3px 16px rgba(0,0,0,0.07);
   }
   .skills-grid {
@@ -174,6 +185,7 @@ title: About
   @media (max-width: 520px) {
     .info-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .info-tile .tile-value { white-space: normal; }
   }
 </style>
 
@@ -198,42 +210,42 @@ title: About
 <div class="info-grid">
   <div class="info-tile">
     <span class="tile-icon">🎓</span>
-    <div>
+    <div class="tile-text">
       <p class="tile-label">University</p>
-      <p class="tile-value">UET Faisalabad Campus</p>
+      <p class="tile-value">UET Faisalabad</p>
     </div>
   </div>
   <div class="info-tile">
     <span class="tile-icon">📚</span>
-    <div>
+    <div class="tile-text">
       <p class="tile-label">Degree</p>
-      <p class="tile-value">BS Computer Engineering</p>
+      <p class="tile-value">BS Computer Engg.</p>
     </div>
   </div>
   <div class="info-tile">
     <span class="tile-icon">📋</span>
-    <div>
+    <div class="tile-text">
       <p class="tile-label">Registration No</p>
       <p class="tile-value">2025-BSCPE-110</p>
     </div>
   </div>
   <div class="info-tile">
     <span class="tile-icon">📅</span>
-    <div>
+    <div class="tile-text">
       <p class="tile-label">Semester</p>
       <p class="tile-value">Semester 2 — 2026</p>
     </div>
   </div>
   <div class="info-tile">
     <span class="tile-icon">📍</span>
-    <div>
+    <div class="tile-text">
       <p class="tile-label">Location</p>
       <p class="tile-value">Lahore, Pakistan</p>
     </div>
   </div>
   <div class="info-tile">
     <span class="tile-icon">💼</span>
-    <div>
+    <div class="tile-text">
       <p class="tile-label">Status</p>
       <p class="tile-value open">Open to Work ✅</p>
     </div>
@@ -244,25 +256,22 @@ title: About
 <h2 class="section-heading">🎓 Education</h2>
 <hr class="section-divider">
 <div class="edu-wrap">
-
   <div class="edu-entry">
     <span class="edu-icon">📘</span>
     <div>
       <h3>Matric — Computer Science</h3>
       <p class="edu-inst">Secondary School Certificate</p>
-      <p class="edu-meta">Completed | Board of Intermediate & Secondary Education</p>
+      <p class="edu-meta">Completed | Board of Intermediate &amp; Secondary Education</p>
     </div>
   </div>
-
   <div class="edu-entry">
     <span class="edu-icon">📗</span>
     <div>
       <h3>Intermediate — ICS (Inter with Computer Science)</h3>
       <p class="edu-inst">Higher Secondary School Certificate</p>
-      <p class="edu-meta">Completed | Board of Intermediate & Secondary Education</p>
+      <p class="edu-meta">Completed | Board of Intermediate &amp; Secondary Education</p>
     </div>
   </div>
-
   <div class="edu-entry">
     <span class="edu-icon">🏛️</span>
     <div>
@@ -271,7 +280,6 @@ title: About
       <p class="edu-meta">2025 — Present &nbsp;|&nbsp; Semester 2 &nbsp;|&nbsp; Reg: 2025-BSCPE-110</p>
     </div>
   </div>
-
 </div>
 
 <!-- Skills -->
@@ -326,7 +334,7 @@ title: About
     </div>
     <div class="journey-card">
       <span class="jc-icon">💻</span>
-      <h3>Coder & Builder</h3>
+      <h3>Coder &amp; Builder</h3>
       <p>Building real projects while managing semester pressure, exams, and online classes.</p>
     </div>
     <div class="journey-card">
