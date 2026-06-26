@@ -115,6 +115,7 @@ title: Home
     line-height: 1.7;
     color: #555;
     margin: 0;
+    text-align: left;
   }
   .highlight-card ul {
     margin: 0;
@@ -128,6 +129,7 @@ title: Home
     padding-left: 18px;
     position: relative;
     margin-bottom: 4px;
+    text-align: left;
   }
   .highlight-card ul li::before {
     content: "";
