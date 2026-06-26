@@ -25,13 +25,12 @@ title: Contact
   .contact-card {
     background: white;
     border-radius: 12px;
-    padding: 40px 14px 30px;
+    padding: 36px 20px 28px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.06);
     border-bottom: 4px solid transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     min-height: 200px;
     transition: all 0.3s ease;
@@ -54,24 +53,26 @@ title: Contact
     font-weight: 500;
     letter-spacing: 0.5px;
   }
-  .contact-card p,
-  .contact-card a {
+  .contact-card .card-value {
     font-size: 14px;
     font-weight: 700;
-    margin: 0 0 8px 0;
+    margin: 0 0 10px 0;
     color: #1a1a2e;
     text-decoration: none;
-    line-height: 1.2;
-    word-wrap: break-word;
-    max-width: 100%;
+    line-height: 1.3;
+    word-break: break-word;
   }
-  .contact-card a { color: #e94560; }
+  .contact-card a.card-value { color: #e94560; }
+  .contact-card a.card-value:hover { text-decoration: underline; }
   .contact-card .card-desc {
-    font-size: 12px;
+    font-size: 12.5px;
     font-weight: 400;
     color: #999;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.6;
+    text-align: center;
+    word-spacing: normal;
+    letter-spacing: normal;
   }
 
   @media (max-width: 800px) {
@@ -188,37 +189,37 @@ title: Contact
   <div class="contact-card">
     <span class="icon">📧</span>
     <h3>Email</h3>
-    <a href="mailto:wmohsinriaz@gmail.com">wmohsinriaz@gmail.com</a>
+    <a href="mailto:wmohsinriaz@gmail.com" class="card-value">wmohsinriaz@gmail.com</a>
     <p class="card-desc">Best way to reach me for professional queries and collaborations.</p>
   </div>
   <div class="contact-card">
     <span class="icon">🐙</span>
     <h3>GitHub</h3>
-    <a href="https://github.com/m-mohsin-riaz" target="_blank">m-mohsin-riaz</a>
+    <a href="https://github.com/m-mohsin-riaz" target="_blank" class="card-value">m-mohsin-riaz</a>
     <p class="card-desc">Explore my open-source projects and code contributions.</p>
   </div>
   <div class="contact-card">
     <span class="icon">💬</span>
     <h3>WhatsApp</h3>
-    <a href="https://wa.me/923014144869" target="_blank">+92 301 4144869</a>
+    <a href="https://wa.me/923014144869" target="_blank" class="card-value">+92 301 4144869</a>
     <p class="card-desc">Drop a quick message — I usually reply within a few hours.</p>
   </div>
   <div class="contact-card">
     <span class="icon">📸</span>
     <h3>Instagram</h3>
-    <a href="https://instagram.com/itz_mohsin_riaz" target="_blank">itz_mohsin_riaz</a>
+    <a href="https://instagram.com/itz_mohsin_riaz" target="_blank" class="card-value">itz_mohsin_riaz</a>
     <p class="card-desc">Follow along for updates, creative work, and daily life.</p>
   </div>
   <div class="contact-card">
     <span class="icon">🏙️</span>
     <h3>Home City</h3>
-    <p>Lahore, Pakistan</p>
+    <p class="card-value">Lahore, Pakistan</p>
     <p class="card-desc">Based in the cultural heart of Punjab — open to remote opportunities worldwide.</p>
   </div>
   <div class="contact-card">
     <span class="icon">🎓</span>
     <h3>University</h3>
-    <p>UET Faisalabad</p>
+    <p class="card-value">UET Faisalabad</p>
     <p class="card-desc">Studying engineering with a passion for software development and problem-solving.</p>
   </div>
 </div>
