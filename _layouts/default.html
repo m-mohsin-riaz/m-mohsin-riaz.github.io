@@ -3,60 +3,144 @@
 {% include head.html %}
 
 <style>
-  /* Global theme variables */
-  body { background: #0f0e17; color: #e0e6f0; transition: background 0.3s, color 0.3s; }
-  body.light-mode { background: #f0f2f8 !important; color: #1a1a2e !important; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap');
 
-  /* Header light mode */
+  :root {
+    --accent: #00e5ff;
+    --accent2: #7c3aed;
+    --bg: #050b18;
+    --bg2: #0a1628;
+    --card: rgba(0,229,255,0.04);
+    --border: rgba(0,229,255,0.15);
+    --text: #e2eaf8;
+    --text-muted: #7a90b8;
+  }
+
+  body {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: 'Inter', sans-serif !important;
+    transition: background 0.4s, color 0.4s;
+    margin: 0;
+  }
+
+  /* ── LIGHT MODE ── */
+  body.light-mode {
+    --accent: #0077cc;
+    --accent2: #6d28d9;
+    --bg: #f0f4ff;
+    --bg2: #ffffff;
+    --card: rgba(0,119,204,0.05);
+    --border: rgba(0,119,204,0.18);
+    --text: #0f172a;
+    --text-muted: #4a5568;
+  }
+  body.light-mode { background: var(--bg) !important; color: var(--text) !important; }
+
+  /* ── HEADER ── */
+  header {
+    background: rgba(5,11,24,0.85) !important;
+    backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid var(--border) !important;
+    position: sticky; top: 0; z-index: 1000;
+    transition: background 0.4s;
+  }
   body.light-mode header {
-    background: #ffffff !important;
-    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+    background: rgba(255,255,255,0.92) !important;
+    border-bottom: 1px solid rgba(0,119,204,0.2) !important;
+  }
+
+  header h1 a,
+  header a,
+  header nav a,
+  header .page-link,
+  header .site-title {
+    color: var(--accent) !important;
+    text-decoration: none !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 600 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  header a:hover, header nav a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 12px var(--accent);
   }
   body.light-mode header h1 a,
-  body.light-mode header a { color: #1a1a2e !important; }
+  body.light-mode header a,
+  body.light-mode header nav a,
+  body.light-mode header .page-link,
+  body.light-mode header .site-title {
+    color: var(--accent) !important;
+    background: transparent !important;
+    background-color: transparent !important;
+  }
 
-  /* Content light mode */
-  body.light-mode .page-content,
-  body.light-mode article,
-  body.light-mode main { background: #f0f2f8 !important; color: #1a1a2e !important; }
+  header .site-nav,
+  header nav,
+  header .trigger {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  body.light-mode header .site-nav,
+  body.light-mode header nav,
+  body.light-mode header .trigger {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
 
+  /* ── FOOTER ── */
+  footer {
+    background: var(--bg2) !important;
+    border-top: 1px solid var(--border) !important;
+    color: var(--text-muted) !important;
+    font-size: 13px;
+    padding: 16px 24px;
+    text-align: center;
+  }
+  footer a { color: var(--accent) !important; }
+
+  /* ── GLOBAL CONTENT ── */
+  .page-content, article, main, .post-content {
+    background: transparent !important;
+    color: var(--text) !important;
+  }
+  h1, h2, h3, h4 { color: var(--text) !important; }
+  p, li, span, td, th { color: var(--text) !important; }
   body.light-mode h1, body.light-mode h2,
   body.light-mode h3, body.light-mode p,
-  body.light-mode li, body.light-mode span,
-  body.light-mode td, body.light-mode th { color: #1a1a2e !important; }
+  body.light-mode li, body.light-mode span { color: var(--text) !important; }
 
-  /* Footer light mode */
-  body.light-mode footer { background: #ffffff !important; color: #1a1a2e !important; }
-
-  /* ── Global Theme Toggle Button ── */
+  /* ── THEME BUTTON ── */
   #global-theme-btn {
     position: fixed;
-    top: 14px;
-    right: 18px;
+    top: 14px; right: 18px;
     z-index: 99999;
-    background: rgba(233,69,96,0.15);
-    border: 2px solid #e94560;
+    background: rgba(0,229,255,0.1);
+    border: 1.5px solid var(--accent);
     border-radius: 50px;
-    padding: 7px 15px;
+    padding: 7px 16px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
+    display: flex; align-items: center; gap: 7px;
+    color: var(--accent);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; font-size: 12px;
     backdrop-filter: blur(8px);
     transition: all 0.3s ease;
-    box-shadow: 0 0 16px rgba(233,69,96,0.3);
-    text-decoration: none;
+    box-shadow: 0 0 16px rgba(0,229,255,0.2);
   }
   #global-theme-btn:hover {
-    background: rgba(233,69,96,0.3);
-    box-shadow: 0 0 24px rgba(233,69,96,0.5);
+    background: rgba(0,229,255,0.2);
+    box-shadow: 0 0 28px rgba(0,229,255,0.45);
     transform: scale(1.05);
   }
-  body.light-mode #global-theme-btn { color: #1a1a2e; }
+  body.light-mode #global-theme-btn {
+    background: rgba(0,119,204,0.1);
+    border-color: #0077cc;
+    color: #0077cc;
+    box-shadow: 0 0 16px rgba(0,119,204,0.2);
+  }
 </style>
 
 <header class="hover smooth">
@@ -66,7 +150,6 @@
   {% include menu.html menu=site.navigation %}
 </header>
 
-<!-- Global Theme Toggle — Har page pe dikhega -->
 <button id="global-theme-btn" onclick="toggleGlobalTheme()">
   <span id="g-ic">🌙</span>
   <span id="g-lbl">Dark</span>
@@ -82,14 +165,12 @@
 {%- endif -%}
 
 <script>
-  // Immediately apply saved theme (before page renders)
   (function() {
     if (localStorage.getItem('theme') === 'light') {
       document.body.classList.add('light-mode');
     }
   })();
 
-  // Set correct icon after DOM loads
   document.addEventListener('DOMContentLoaded', function() {
     var isLight = document.body.classList.contains('light-mode');
     var ic = document.getElementById('g-ic');
@@ -105,5 +186,4 @@
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
   }
 </script>
-
 </html>
