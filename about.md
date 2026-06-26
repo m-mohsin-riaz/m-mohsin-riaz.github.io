@@ -83,6 +83,7 @@ title: About
   .tile-value.open { color: #16a34a; }
 
   /* Section Heading - FORCED LEFT ALIGNED */
+  h2.section-heading,
   .section-heading {
     font-size: 22px !important;
     font-weight: 800 !important;
@@ -94,6 +95,7 @@ title: About
     text-align: left !important;
     justify-content: flex-start !important;
     width: 100% !important;
+    text-align-last: left !important;
   }
   .section-divider {
     border: none;
