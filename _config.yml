@@ -12,11 +12,10 @@ show_sidebar: false
 show_minimal: false
 url: "https://m-mohsin-riaz.github.io"
 baseurl: ""
-
 navigation:
-  - {file: "myjourney.md", title: "My Journey", icon: "book-open"}
-  - {file: "about.md",     title: "About Me",    icon: "user"}
-  - {file: "contact.md",   title: "Contact Me",  icon: "envelope"}
+  - {file: "myjourney.md", title: "My Journey", icon: "fa-regular fa-book-open"}
+  - {file: "about.md",     title: "About Me",    icon: "fa-regular fa-user"}
+  - {file: "contact.md",   title: "Contact Me",  icon: "fa-regular fa-envelope"}
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
