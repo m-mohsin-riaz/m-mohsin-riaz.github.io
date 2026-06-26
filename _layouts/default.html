@@ -7,10 +7,8 @@
 
   :root {
     --accent: #00e5ff;
-    --accent2: #7c3aed;
     --bg: #050b18;
     --bg2: #0a1628;
-    --card: rgba(0,229,255,0.04);
     --border: rgba(0,229,255,0.15);
     --text: #e2eaf8;
     --text-muted: #7a90b8;
@@ -24,93 +22,163 @@
     margin: 0;
   }
 
-  /* ── LIGHT MODE ── */
   body.light-mode {
     --accent: #0077cc;
-    --accent2: #6d28d9;
     --bg: #f0f4ff;
     --bg2: #ffffff;
-    --card: rgba(0,119,204,0.05);
     --border: rgba(0,119,204,0.18);
     --text: #0f172a;
     --text-muted: #4a5568;
+    background: var(--bg) !important;
+    color: var(--text) !important;
   }
-  body.light-mode { background: var(--bg) !important; color: var(--text) !important; }
 
   /* ── HEADER ── */
-  header {
-    background: rgba(5,11,24,0.85) !important;
+  header, .site-header {
+    background: rgba(5,11,24,0.92) !important;
     backdrop-filter: blur(16px) !important;
     border-bottom: 1px solid var(--border) !important;
-    position: sticky; top: 0; z-index: 1000;
-    transition: background 0.4s;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    transition: background 0.4s !important;
   }
-  body.light-mode header {
-    background: rgba(255,255,255,0.92) !important;
+  body.light-mode header,
+  body.light-mode .site-header {
+    background: rgba(255,255,255,0.95) !important;
     border-bottom: 1px solid rgba(0,119,204,0.2) !important;
   }
 
-  header h1 a,
-  header a,
-  header nav a,
-  header .page-link,
-  header .site-title {
+  /* Header links */
+  header a, header .site-title, header .page-link,
+  .site-header a, .site-header .site-title, .site-header .page-link {
     color: var(--accent) !important;
-    text-decoration: none !important;
     font-family: 'Fira Code', monospace !important;
     font-weight: 600 !important;
     background: transparent !important;
     background-color: transparent !important;
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: color 0.3s, text-shadow 0.3s !important;
+    text-decoration: none !important;
   }
-  header a:hover, header nav a:hover {
+  header a:hover, header .page-link:hover {
     color: #ffffff !important;
     text-shadow: 0 0 12px var(--accent);
+    background: transparent !important;
   }
-  body.light-mode header h1 a,
   body.light-mode header a,
-  body.light-mode header nav a,
+  body.light-mode header .site-title,
   body.light-mode header .page-link,
-  body.light-mode header .site-title {
+  body.light-mode .site-header a {
     color: var(--accent) !important;
     background: transparent !important;
     background-color: transparent !important;
+    text-shadow: none !important;
+  }
+  body.light-mode header a:hover {
+    color: #005599 !important;
+    text-shadow: none !important;
   }
 
-  header .site-nav,
-  header nav,
-  header .trigger {
+  /* Nav background */
+  .site-nav, .trigger, nav,
+  body.light-mode .site-nav,
+  body.light-mode .trigger,
+  body.light-mode nav {
     background: transparent !important;
     background-color: transparent !important;
   }
-  body.light-mode header .site-nav,
-  body.light-mode header nav,
-  body.light-mode header .trigger {
-    background: transparent !important;
-    background-color: transparent !important;
-  }
 
-  /* ── FOOTER ── */
-  footer {
-    background: var(--bg2) !important;
-    border-top: 1px solid var(--border) !important;
-    color: var(--text-muted) !important;
-    font-size: 13px;
-    padding: 16px 24px;
-    text-align: center;
-  }
-  footer a { color: var(--accent) !important; }
-
-  /* ── GLOBAL CONTENT ── */
-  .page-content, article, main, .post-content {
+  /* ── PAGE CONTENT ── */
+  .page-content, .post-content, article, main {
     background: transparent !important;
     color: var(--text) !important;
   }
-  h1, h2, h3, h4 { color: var(--text) !important; }
-  p, li, span, td, th { color: var(--text) !important; }
-  body.light-mode h1, body.light-mode h2,
-  body.light-mode h3, body.light-mode p,
-  body.light-mode li, body.light-mode span { color: var(--text) !important; }
+
+  /* All text elements */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text) !important;
+    font-family: 'Inter', sans-serif !important;
+  }
+  p, li, span, td, th, blockquote, label {
+    color: var(--text) !important;
+  }
+
+  /* ── WHITE CARD FIX — dark mode ── */
+  body:not(.light-mode) .post,
+  body:not(.light-mode) .post-content,
+  body:not(.light-mode) section,
+  body:not(.light-mode) .card,
+  body:not(.light-mode) [class*="card"],
+  body:not(.light-mode) [class*="post"] {
+    color: var(--text) !important;
+  }
+
+  /* Force any white/light background to dark in dark mode */
+  body:not(.light-mode) [style*="background:#fff"],
+  body:not(.light-mode) [style*="background: #fff"],
+  body:not(.light-mode) [style*="background:white"],
+  body:not(.light-mode) [style*="background: white"],
+  body:not(.light-mode) [style*="background-color:#fff"],
+  body:not(.light-mode) [style*="background-color: white"] {
+    background: var(--bg2) !important;
+    color: var(--text) !important;
+  }
+
+  /* ── HERO BANNER FIX ── */
+  body.light-mode [class*="hero"],
+  body.light-mode [class*="banner"],
+  body.light-mode [class*="cover"] {
+    background: linear-gradient(135deg, #dbeafe, #e0f2fe) !important;
+    color: #0f172a !important;
+  }
+  body.light-mode [class*="hero"] h1,
+  body.light-mode [class*="hero"] h2,
+  body.light-mode [class*="hero"] p,
+  body.light-mode [class*="banner"] h1,
+  body.light-mode [class*="banner"] p {
+    color: #0f172a !important;
+  }
+
+  /* ── LINKS ── */
+  a {
+    color: var(--accent) !important;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  a:hover { color: #ffffff !important; text-shadow: 0 0 10px var(--accent); }
+  body.light-mode a { color: var(--accent) !important; }
+  body.light-mode a:hover { color: #005599 !important; text-shadow: none; }
+
+  /* ── FOOTER ── */
+  footer, .site-footer {
+    background: var(--bg2) !important;
+    border-top: 1px solid var(--border) !important;
+    color: var(--text-muted) !important;
+    text-align: center;
+    padding: 16px;
+    font-size: 13px;
+  }
+  footer a, .site-footer a { color: var(--accent) !important; }
+
+  /* ── CODE ── */
+  code, pre {
+    background: rgba(0,229,255,0.06) !important;
+    border: 1px solid rgba(0,229,255,0.15) !important;
+    color: #00e5ff !important;
+    font-family: 'Fira Code', monospace !important;
+    border-radius: 6px !important;
+  }
+  body.light-mode code, body.light-mode pre {
+    background: rgba(0,119,204,0.06) !important;
+    border-color: rgba(0,119,204,0.18) !important;
+    color: #0055aa !important;
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: rgba(0,229,255,0.3); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(0,229,255,0.6); }
 
   /* ── THEME BUTTON ── */
   #global-theme-btn {
@@ -177,6 +245,12 @@
     var lbl = document.getElementById('g-lbl');
     if (ic) ic.textContent = isLight ? '☀️' : '🌙';
     if (lbl) lbl.textContent = isLight ? 'Light' : 'Dark';
+
+    /* Sync home page theme button if exists */
+    var hic = document.getElementById('theme-icon');
+    var hlbl = document.getElementById('theme-lbl');
+    if (hic) hic.textContent = isLight ? '☀️' : '🌙';
+    if (hlbl) hlbl.textContent = isLight ? 'Light' : 'Dark';
   });
 
   function toggleGlobalTheme() {
@@ -184,6 +258,13 @@
     document.getElementById('g-ic').textContent = isLight ? '☀️' : '🌙';
     document.getElementById('g-lbl').textContent = isLight ? 'Light' : 'Dark';
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+    /* Sync home page theme button if exists */
+    var hic = document.getElementById('theme-icon');
+    var hlbl = document.getElementById('theme-lbl');
+    if (hic) hic.textContent = isLight ? '☀️' : '🌙';
+    if (hlbl) hlbl.textContent = isLight ? 'Light' : 'Dark';
   }
 </script>
+
 </html>
