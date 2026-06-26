@@ -199,7 +199,7 @@ title: About
 <div class="intro-card">
   <div class="intro-avatar">👋🏼</div>
   <div>
-    <h2>Hi, I'm <span>Mohsin Riaz</span></h2>
+    <h2>Hi, I'm <span>Mohsin Riaz</span></div>
     <p>A <strong>Computer Engineering student</strong> from Lahore, Pakistan. I love building clean websites and sharing my real life experiences through writing.</p>
     <p>I came to university leaving my comfort zone behind — facing nervousness, distance from home, and many unexpected challenges. But every difficulty taught me something new about patience, resilience, and growth.</p>
     <p>When I'm not coding, I'm writing about my <strong>university journey</strong> — the friendships, the tough weeks, the exams, and everything in between. Real stories, real emotions.</p>
@@ -253,7 +253,7 @@ title: About
 </div>
 
 <!-- Education -->
-<h2 class="section-heading">🎓 Education</h2>
+<div class="section-heading">🎓 Education</div>
 <hr class="section-divider">
 <div class="edu-wrap">
   <div class="edu-entry">
@@ -283,7 +283,7 @@ title: About
 </div>
 
 <!-- Skills -->
-<h2 class="section-heading">⚡ Skills</h2>
+<div class="section-heading">⚡ Skills</div>
 <hr class="section-divider">
 <div class="skills-wrap">
   <div class="skills-grid">
@@ -323,7 +323,7 @@ title: About
 </div>
 
 <!-- My Journey -->
-<h2 class="section-heading">🗺️ My Journey</h2>
+<div class="section-heading">🗺️ My Journey</div>
 <hr class="section-divider">
 <div class="journey-wrap">
   <div class="journey-grid">
