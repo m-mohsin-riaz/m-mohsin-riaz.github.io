@@ -1,183 +1,329 @@
----
-layout: default
-title: Home
----
-{% include theme-toggle.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohsin Riaz – Computer Engineering Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f6f9;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px 16px;
+    }
 
-  .hero {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: white;
-    border-radius: 18px;
-    padding: 50px;
-    margin-bottom: 45px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: -60px; right: -60px;
-    width: 220px; height: 220px;
-    background: radial-gradient(circle, rgba(233,69,96,0.25), transparent 70%);
-    pointer-events: none;
-  }
-  .hero-pic {
-    flex-shrink: 0;
-    width: 140px; height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #e94560;
-    position: relative; z-index: 1;
-  }
-  .hero-text { position: relative; z-index: 1; }
-  .hero-text h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 34px; font-weight: 700;
-    margin: 0 0 8px 0; color: white;
-  }
-  .hero-text p { font-size: 16px; color: #aaa; margin: 0; }
+    .wrapper {
+      width: 100%;
+      max-width: 780px;
+    }
 
-  .section-label { text-align: center; margin: 0 0 22px; }
-  .section-label .eyebrow {
-    display: block; font-size: 12px; font-weight: 700;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    color: #e94560; margin-bottom: 6px;
-  }
-  .section-label h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px; color: #1a1a2e; margin: 0;
-  }
+    /* ── Hero Card ── */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 16px;
+      padding: 22px 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      gap: 20px;
+    }
 
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    max-width: 1050px;
-    margin: 0 auto 50px;
-  }
+    .hero-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex: 1;
+    }
 
-  .highlight-card {
-    background: white; border-radius: 14px;
-    padding: 28px 24px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    border-left: 5px solid #e94560;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-  .highlight-card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,0.1); }
-  .icon-badge {
-    width: 48px; height: 48px; border-radius: 12px;
-    background: rgba(233,69,96,0.1);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px; margin-bottom: 16px;
-  }
-  .highlight-card h3 { font-family: 'Poppins', sans-serif; font-size: 16px; color: #1a1a2e; margin: 0 0 10px; }
-  .highlight-card p { font-size: 14px; line-height: 1.7; color: #555; margin: 0; text-align: left; word-spacing: normal; letter-spacing: normal; }
-  .highlight-card ul { margin: 0; padding-left: 0; list-style: none; }
-  .highlight-card ul li {
-    font-size: 14px; line-height: 1.7; color: #555;
-    padding-left: 18px; position: relative;
-    margin-bottom: 4px; text-align: left;
-    word-spacing: normal; letter-spacing: normal;
-  }
-  .highlight-card ul li::before {
-    content: ""; position: absolute; left: 0; top: 9px;
-    width: 6px; height: 6px; border-radius: 50%; background: #e94560;
-  }
+    .hero-left img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e94560;
+      flex-shrink: 0;
+    }
 
-  .fact-card {
-    background: white; border-radius: 14px;
-    padding: 26px 16px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    border-left: 5px solid #e94560;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    text-align: center; min-height: 150px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-  .fact-card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,0.1); }
-  .fact-card .icon-badge { width: 52px; height: 52px; border-radius: 50%; margin-bottom: 14px; font-size: 24px; }
-  .fact-card h3 { font-size: 12px; color: #999; margin: 0 0 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; }
-  .fact-card p { font-size: 15px; font-weight: 700; color: #1a1a2e; margin: 0; line-height: 1.4; word-spacing: normal; letter-spacing: normal; }
+    .hero-left h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 3px;
+    }
 
-  /* Theme toggle in nav */
-  .theme-toggle-wrap {
-    display: inline-flex;
-    align-items: center;
-    margin-left: 8px;
-  }
+    .hero-left p {
+      font-size: 12px;
+      color: #888;
+    }
 
-  header h1 { display: none; }
+    /* 2×2 Nav Grid */
+    .nav-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
 
-  @media (max-width: 768px) {
-    .hero { flex-direction: column; text-align: center; padding: 40px 20px; }
-    .cards-grid { grid-template-columns: 1fr; padding: 0 10px; }
-    .fact-card { min-height: auto; }
-  }
-</style>
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-<!-- Theme Toggle Button (added next to nav) -->
-<div style="position: fixed; top: 14px; right: 20px; z-index: 9999;">
-  <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Theme">
-    <i id="theme-icon" class="fa-regular fa-moon"></i>
-    <span id="theme-label">Theme</span>
-  </button>
-</div>
+    .nav-item:hover .nav-icon { transform: scale(1.15); }
 
-<div class="hero">
-  <img class="hero-pic" src="/assets/images/mohsin.jpg.jpeg" alt="Mohsin Riaz">
-  <div class="hero-text">
-    <h1>Mohsin Riaz</h1>
-    <p>Computer Engineering Student</p>
+    .nav-icon {
+      font-size: 22px;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #1a1a2e;
+      white-space: nowrap;
+    }
+
+    /* ── Section Header ── */
+    .section-header {
+      text-align: center;
+      margin: 8px 0 16px;
+    }
+
+    .section-header .eyebrow {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .section-header h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    /* ── Card Grid ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+      border-left: 4px solid #e94560;
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .card-head h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .card-head .icon {
+      font-size: 16px;
+    }
+
+    .card p {
+      font-size: 10px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      font-size: 10px;
+      line-height: 1.6;
+      color: #555;
+      padding-left: 12px;
+      position: relative;
+      margin-bottom: 2px;
+    }
+
+    .card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #e94560;
+    }
+
+    /* Fact cards */
+    .card.fact .card-head h3 {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #aaa;
+      font-weight: 600;
+    }
+
+    .card.fact p {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 560px) {
+      .hero { flex-direction: column; align-items: flex-start; }
+      .nav-grid { width: 100%; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Hero / Nav Bar -->
+    <div class="hero">
+      <div class="hero-left">
+        <img src="https://m-mohsin-riaz.github.io/assets/images/mohsin.jpg.jpeg" alt="Mohsin Riaz">
+        <div>
+          <h1>Mohsin Riaz</h1>
+          <p>Computer Engineering Student</p>
+        </div>
+      </div>
+      <nav class="nav-grid" aria-label="Main navigation">
+        <a href="#journey" class="nav-item">
+          <span class="nav-icon">📖</span>
+          <span class="nav-label">My Journey</span>
+        </a>
+        <a href="#about" class="nav-item">
+          <span class="nav-icon">👤</span>
+          <span class="nav-label">About Me</span>
+        </a>
+        <a href="#contact" class="nav-item">
+          <span class="nav-icon">✉️</span>
+          <span class="nav-label">Contact Me</span>
+        </a>
+        <a href="#" class="nav-item" id="theme-toggle" onclick="toggleTheme(event)">
+          <span class="nav-icon" id="theme-icon">🌙</span>
+          <span class="nav-label">Theme</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Section Header -->
+    <div class="section-header">
+      <span class="eyebrow">Overview</span>
+      <h2>Professional Profile</h2>
+    </div>
+
+    <!-- Info Cards Row 1 -->
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-head">
+          <h3>Professional Profile</h3>
+          <span class="icon">🧑‍💻</span>
+        </div>
+        <p>Welcome to my official academic portfolio documenting my 8-semester journey in Computer Engineering.</p>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <h3>Current Focus</h3>
+          <span class="icon">🎯</span>
+        </div>
+        <ul>
+          <li>Programming Fundamentals</li>
+          <li>Database Management</li>
+          <li>C++, MySQL, GitHub, Jekyll</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <h3>Objective</h3>
+          <span class="icon">🏆</span>
+        </div>
+        <p>Build a comprehensive repository of academic projects across all 8 semesters.</p>
+      </div>
+    </div>
+
+    <!-- Fact Cards Row 2 -->
+    <div class="card-grid">
+      <div class="card fact">
+        <div class="card-head">
+          <h3>Degree</h3>
+          <span class="icon">🎓</span>
+        </div>
+        <p>BS Computer Engineering</p>
+      </div>
+      <div class="card fact">
+        <div class="card-head">
+          <h3>University</h3>
+          <span class="icon">🏛️</span>
+        </div>
+        <p>UET Faisalabad</p>
+      </div>
+      <div class="card fact">
+        <div class="card-head">
+          <h3>Home City</h3>
+          <span class="icon">🏙️</span>
+        </div>
+        <p>Lahore</p>
+      </div>
+    </div>
+
   </div>
-</div>
 
-<div class="section-label">
-  <span class="eyebrow">Overview</span>
-  <h2>Professional Profile</h2>
-</div>
+  <script>
+    function toggleTheme(e) {
+      e.preventDefault();
+      const isDark = document.body.classList.toggle('dark');
+      document.getElementById('theme-icon').textContent = isDark ? '☀️' : '🌙';
+    }
 
-<div class="cards-grid">
-  <div class="highlight-card">
-    <div class="icon-badge">🧑‍💻</div>
-    <h3>Professional Profile</h3>
-    <p>Welcome to my official academic portfolio. This platform documents my 8-semester journey in Computer Engineering, focusing on technical excellence and structured learning.</p>
-  </div>
-  <div class="highlight-card">
-    <div class="icon-badge">🎯</div>
-    <h3>Current Focus</h3>
-    <ul>
-      <li>Programming Fundamentals</li>
-      <li>Database Management Systems</li>
-      <li>Technical Stack: C++, MySQL, GitHub, Jekyll</li>
-    </ul>
-  </div>
-  <div class="highlight-card">
-    <div class="icon-badge">🏆</div>
-    <h3>Objective</h3>
-    <p>To build a comprehensive repository of academic projects and lab implementations across all 8 semesters of Computer Engineering.</p>
-  </div>
-</div>
-
-<div class="cards-grid">
-  <div class="fact-card">
-    <div class="icon-badge">🎓</div>
-    <h3>Degree</h3>
-    <p>BS Computer Engineering</p>
-  </div>
-  <div class="fact-card">
-    <div class="icon-badge">🏛️</div>
-    <h3>University</h3>
-    <p>UET Faisalabad</p>
-  </div>
-  <div class="fact-card">
-    <div class="icon-badge">🏙️</div>
-    <h3>Home City</h3>
-    <p>Lahore</p>
-  </div>
-</div>
+    // Dark mode styles injected via JS to keep HTML clean
+    const darkCSS = `
+      body.dark { background: #12111a; }
+      body.dark .hero,
+      body.dark .card { background: #1e1d2e; box-shadow: 0 3px 12px rgba(0,0,0,0.3); }
+      body.dark .hero-left h1,
+      body.dark .card-head h3,
+      body.dark .card.fact p,
+      body.dark .nav-label,
+      body.dark .section-header h2 { color: #f0f0f0; }
+      body.dark .card p,
+      body.dark .card ul li { color: #aaa; }
+      body.dark .section-header .eyebrow { color: #666; }
+      body.dark .card.fact .card-head h3 { color: #666; }
+    `;
+    const style = document.createElement('style');
+    style.textContent = darkCSS;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
